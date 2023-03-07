@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamination</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/english.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <nav class="navigation-header">
+                <a href="./index.html" class="logo-header">
+                    <svg class="logo-icon" width="131" height="104">
+                        <use href="./images/icons.svg#icon-logo-2"></use>
+                    </svg>
+                </a>
+                <ul class="menu list">
+                    <li class="text-header">
+                        <a class="menu-link-header" href="#about">About me</a>
+                    </li>
+                    <li class="text-header">
+                        <a class="menu-link-header" href="#services-prices">Services / prices</a>
+                    </li>
+                    <li class="text-header">
+                        <a class="menu-link-header" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="text-header">
+                        <a class="menu-link-header" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="text-header">
+                        <a class="menu-link-header" href="#answers">Question answer</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-call" data-modal-open>Request a call back                  
+            </button> 
+            <div class="language-select">
+                <a href="./index.html" class="language-pl">Pl</a>
+                <a href="./english.html" class="language-en">En</a>
+            </div>        
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container container">
+                <div class="hero-left">
+                    <h1 class="heading-one heading">Eyelash lamination <br>and eyebrows </h1>
+                    <h1 class="heading-two heading-accent heading">in Warsaw</h1>
+                    <p class="offer-header">Leave a request online and get a 5% discount on your first visit</p>        
+                    <button class="btn-offer-header" type="button">Get a discount</button>
+                </div>           
+            </div>
+        </section>
+        <section class="client-pain" >
+            <div class="client-pain-container container padding-top-bottom">
+                <div class="client-pain-left">
+                    <h2 class="client-pain-title title-accent title">Are you familiar with these problems?</h2>
+                    <ul class="client-pain-list list">
+                        <li class="client-pain-one">
+                            <h3 class="subtitle">You're tired:</h3>
+                            <ul class="text-body">
+                                <li>from daily tinting of eyelashes and eyebrows</li>
+                                <li>light, sparse and thin eyelashes</li>
+                                <li>straight eyelashes without a curl or tangled, sticking out in different directions</li>
+                            </ul>          
+                        </li>
+                        <li class="client-pain-two">
+                            <h3 class="subtitle">You want:</h3>
+                            <p class="text-body"></p>
+                            <ul class="text-body">
+                                <li>to make your eyelashes and eyebrows look amazing and be healthy at the same time</li>
+                                <li>take a break from lash extensions</li>
+                                <li>reduce the time for daily makeup and sleep longer, and wake up beautiful in the morning</li>
+                                <li>get away from the daily routine, relax for a couple of hours</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div >
+                <div class="client-pain-right">
+                    <img src="./images-en/client-pain-big-min.png" alt="" class="client-pain-big" width="576" height="722">
+                    <img src="./images-en/client-pain-little-min.png" alt="" class="client-pain-little" width="317" height="419">
+                </div>                
+            </div >
+        </section>
+        <section class="invitation">
+            <div class="invitation-container">
+                <strong class="title-invitation title">Come to me for eyelash and eyebrow lamination</strong>
+                <button class="button-play">
+                    <svg class="button-play-img" width="124" height="124">
+                        <use href="./images/icons.svg#icon-button-play"></use>
+                    </svg>
+                </button>
+            </div >
+        </section>
+        <section class="about">
+            <div class="padding-top-bottom about-container container" id="about">
+                <div class="about-top">
+                    <img src="./images-en/about-me-min.png" alt="" width="576" height="722">
+                    <div class="about-right">                        
+                        <div class="about-right-text"> 
+                            <h2 class="about-title title title-accent">About me</h2>                       
+                            <h3 class="about-subtitle subtitle">My name is Olia Lyashevska</h3>
+                            <p class="about-text-body text-body">I specialize in creating fashionable eyebrows, eyelashes that will highlight your beauty, guaranteeing a good look at any time of the day or night. 
+                                <!--
+                            <span id="dots">...</span>
+                            <span id="more">Dbanie o Twój wygląd i dobre samopoczucie jest dla mnie ważne. Równie ważne jest dla mnie bezpieczeństwo i zdrowie Twoich oczu oraz naturalnych rzęs. Lubię tworzyć nienaganne i oryginalne obrazy, które ukazują piękno klientek, chętnie Ci w tym pomogę!
+                            </span>
+                                -->                             
+                            </p>              
+                            <button id="btnmore" class="more"
+                                onclick="readMore()">                           
+                                To learn more
+                                <svg class="arrow-icon-more" width="11" height="11">
+                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link"></use>></use>
+                                </svg> 
+                            </button>
+                        </div>               
+                    </div>
+                </div>                
+                <p class="quote">"I believe that eyelash and eyebrow styling can look sophisticated and natural to enhance the beauty of every woman.”</p>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="offer-container container">
+                <div class="offer-wrap">
+                    <p class="text-offer-olia-liashevska">OLIA LIASHEVSKA</p>
+                    <p class="text-offer-discount">DISCOUNT</p>
+                    <div class="offer-form-photo">
+                        <div class="offer-left">                       
+                            <h3 class="offer-subtitle">Leave a request online and get a <span class="offer-subtitle-accent">5% discount</span> for the first visit</h3>
+                            <form class="offer-form">
+                                <div class="offer-label-wrap">
+                                    <label class="offer-field">                                                 
+                                        <span class="offer-input-wrap">
+                                            <input 
+                                            type="text" 
+                                            name="user_text" 
+                                            class="offer-input"
+                                            placeholder="Jak masz na imię?" 
+                                            required 
+                                            pattern="[a-zA-z]+$"
+                                            title=""
+                                            />
+                                        </span>              
+                                    </label>
+                                    <label class="offer-field">                                                 
+                                        <span class="offer-input-wrap">
+                                            <input 
+                                            type="tel" 
+                                            name="user_phone" 
+                                            class="offer-input"
+                                            placeholder="+48 _ _ _ - _ _ _ - _ _ _"
+                                            required 
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                            title="xxx-xxx-xx-xx"
+                                            />
+                                        </span>              
+                                    </label> 
+                                </div >                
+                                <button type="submit" class="btn-sign-up">Submit your application
+                                </button>                    
+                            </form>                     
+                        </div>
+                        <img src="./images-en/offer-left-min.png" alt="" width="379" height="439">
+                    </div> 
+                </div>  
+            </div>
+        </section>
+        <section class="advantages-services">
+            <div class="padding-top-bottom advantages-services-container container">
+                    <h2 class="advantages-services-title title-accent title">Benefits of the procedure lamination of eyelashes and eyebrows</h2> 
+                <ul class="advantages-services-list list">
+                    <li class="advantages-services-item">                        
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-beauty"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Beauty</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">Lamination of eyebrows and eyelashes is the trend of this year</p>
+                        </div>                    
+                    </li>
+                    <li class="advantages-services-item">                  
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-face"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Fashion</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">Forget about curling irons and special mascaras</p>
+                        </div>                  
+                    </li> 
+                    <li class="advantages-services-item">               
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-premium-icon-eyelash-mascara-2056936-1"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Convenieсe</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">Your look will become more expressive, and the image will be brighter.</p>
+                        </div>              
+                    </li> 
+                    <li class="advantages-services-item">                  
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-bezpiecznie"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Safely</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">Procedures do not cause loss of eyelashes or eyebrows</p>
+                        </div>               
+                    </li>
+
+                    <li class="advantages-services-item">                  
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-zdrowie"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Health</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">You will improve the hair on the eyebrows and eyelashes</p>
+                        </div>                
+                    </li> 
+                                          
+                    <li class="advantages-services-item">              
+                        <div class="advantages-wrap">
+                            <svg class="advantages-services-icon" width="52" height="52">
+                                <use href="./images/icons.svg#icon-time"></use>
+                            </svg>
+                            <p class="text-body text-body-advantages">Time</p>
+                            <svg class="advantages-services-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-down-arrow"></use>
+                            </svg>
+                            <p class="overlay text-body">You will save time on the daily application and removal of makeup</p>                            
+                        </div>                  
+                    </li>
+                </ul>   
+            </div>
+        </section>
+        <section  class="marquee-conteiner">
+            <p class="marquee">The main trend of recent years is natural beauty</p>
+        </section>
+        <section class="services-prices">
+            <div class="padding-top-bottom services-prices-container container" id="services-prices">         
+                <h2 class="title-accent title">List of services and prices</h2>           
+                <ul class="services-prices-list list">
+                    <li class="services-prices-eyelashes">
+                        <img src="./images-en/services-prices-eyelashes-min.png" alt="" width="571" height="386">
+                        <div class="services-prices-content">
+                            <div>
+                                    <h3  class="subtitle">Eyelash lamination complex</h3> 
+                                    <ul class="services-prices-list-content">
+                                        <li class="text-body text-body-item">Long-term styling, for a period of 4-6 weeks
+                                        </li>
+                                        <li class="text-body text-body-item">Correction, which includes personal selection of shape and width (wax / tweezers)
+                                        <li class="text-body text-body-item">Hair coloring or toning
+                                        </li>
+                                        <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles</li>
+                                    </ul>
+                            </div>
+                            <div class="pice-and-btn">
+                                <p class="text-body-price">PLN 70</p>
+                                <button class="btn-sign-up">Sign up</button>                                
+                            </div>        
+                        </div>
+                    </li>
+                    <li class="services-prices-eyebrows">
+                        <img src="./images-en/services-prices-eyebrows-min.png" alt="" width="571" height="386">
+                        <div class="services-prices-content">
+                            <div>
+                                <h3 class="subtitle">Eyebrow lamination complex</h3>                        
+                                <ul class="services-prices-list-content">
+                                    <li class="text-body text-body-item">Lamination, for a period of 6-8 weeks                                    </li>
+                                    <li class="text-body text-body-item">Eyelash coloring </li>
+                                    <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles)</li>
+                                </ul>
+                            </div>
+                            <div class="pice-and-btn">
+                                <p class="text-body-price">PLN 80</p>
+                                <button class="btn-sign-up">Sign up</button>
+                            </div>                       
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="advantages-me">
+            <div class="advantages-me-container container">
+                <div class="advantages-me-top">
+                    <img src="./images-en/advantages-me-min.png" alt="" width="576" height="722">               
+                    <div class="advantages-me-right">
+                        <div class="advantages-me-text">
+                            <h2 class="advantages-me-title title-accent title">Why do clients contact me</h2>             
+                            <ul class="advantages-me-list">
+                                <li class="text-body text-body-item">Convenient location</li>
+                                <li class="text-body text-body-item">Cozy atmosphere and hospitality</li>
+                                <li class="text-body text-body-item">Pracuję na wysokiej jakości materiałach</li>
+                                <li class="text-body text-body-item">Individual approach</li>
+                                <li class="text-body text-body-item">I love my job</li>
+                            </ul>
+                        </div >
+                    </div>
+                </div>
+                <div class="materials">
+                    <h2 class="materials-text title">I work with quality materials</h2>
+                    <div class="materials-img-wrap">
+                        <img src="./images-en/materals-1-min.png" alt="" width="586" height="514">
+                        <div class="materials-right">
+                            <div class="materials-right-img">
+                                <img src="./images-en/materials-2-min.png" alt="" width="287" height="251">
+                                <img src="./images-en/materials-3-min.png" alt="" width="287" height="251">
+                            </div>
+                            <div class="materials-right-img">
+                                <img src="./images-en/materials-4-min.png" alt="" width="287" height="251">
+                                <img src="./images-en/materials-5-min.png" alt="" width="287" height="251">
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="guarantee">
+                    <h2 class="title">Guarantee</h2>
+                    <h3 class="subtitle">I provide a 7 day warranty</h3>
+                    <p class="text-body">If during this time you notice significant shortcomings in the work performed, I will redo everything absolutely free of charge</p>
+                </div>                 
+            </div>
+        </section>
+        <section class="offer">
+            <div class="padding-top-bottom offer-container container">
+                <div class="offer-wrap">
+                    <p class="text-offer-olia-liashevska">OLIA LIASHEVSKA</p>
+                    <p class="text-offer-discount">DISCOUNT</p>
+                    <div class="offer-form-photo-two offer-form-photo">
+                        <div class="offer-left">                       
+                            <h3 class="offer-subtitle">Leave a request online and get a <span class="offer-subtitle-accent">5% discount</span> for the first visit</h3>
+                            <form class="offer-form">
+                                <div class="offer-label-wrap">
+                                    <label class="offer-field">                                                 
+                                        <span class="offer-input-wrap">
+                                            <input 
+                                            type="text" 
+                                            name="user_text" 
+                                            class="offer-input"
+                                            placeholder="Jak masz na imię?" 
+                                            required 
+                                            pattern="[a-zA-z]+$"
+                                            title=""
+                                            />
+                                        </span>              
+                                    </label>
+                                    <label class="offer-field">                                                 
+                                        <span class="offer-input-wrap">
+                                            <input 
+                                            type="tel" 
+                                            name="user_phone" 
+                                            class="offer-input"
+                                            placeholder="+48 _ _ _ - _ _ _ - _ _ _"
+                                            required 
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                            title="xxx-xxx-xx-xx"
+                                            />
+                                        </span>              
+                                    </label> 
+                                </div >                
+                                <button type="submit" class="btn-sign-up">Submit your application
+                                </button>                    
+                            </form>                     
+                        </div>
+                        <img src="./images-en/offer-right-min.png" alt="" width="379" height="439">
+                    </div> 
+                </div>  
+            </div>
+        </section>       
+        <section class="gallery">
+            <div class="gallery-container container">                              
+                <h2 class="title-accent title">Gallery of works</h2>
+
+                <div class="subtitle photogallery">
+                    <h3 class="subtitle-gallery subtitle"> Photo gallery</h3>                      
+                    <ul class="gallery-list list">
+                        <li class="gallery-item">
+                            <img src="./images-en/gallery-3-min.png" alt="" width="378" height="378">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="./images-en/gallery-2-min.png" alt="" width="378" height="378">
+                        </li>
+                    </ul>
+                </div>     
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="padding-top-bottom container" id="reviews">                               
+                 <h2 class="title title-accent">Customer reviews</h2>              
+                <div class="reviews-wrap">
+                    <div class="reviews-content">
+                        <div class="">
+                            <div class="reviews-photo-and-name">
+                                <img src="./images-en/reviews-avatar-min.png" alt="" width="84" height="84" class="photo-client">
+                                <h3 class="subtitle">Antonina</h3>
+                            </div>
+                            <p class="text-body">Hello, I wanted to write that I am very pleased with the eyelashes and eyebrows. After painting, they look very beautiful. I'll be right back to you</p>
+                        </div>
+                        <button id="btnmore" class="sourse"
+                            onclick="readMore(closse)">                           
+                            Feedback sourse
+                            <svg class="arrow-icon-right" width="11" height="11">
+                                <use href="./images/icons.svg#icon-arrow-right2" class="arrow-icon-link"></use>></use>
+                            </svg> 
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="instagram">
+            <div class="instagram-container container">             
+                    <h2 class="title-accent  title">Instagram</h2>
+                <ul class="instagram-list list">
+                    <li class="instagram-item"><img src="./images-en/instagram-img-1-min.png" alt="" width="260" height="262"></li>
+                    <li class="instagram-item"><img src="./images-en/instagram-img-2-min.png" alt="" width="260" height="262"></li>
+                    <li class="instagram-item"><img src="./images-en/instagram-img-3-min.png" alt="" width="260" height="262"></li>
+                    <li class="instagram-item"><img src="./images-en/instagram-img-4-min.png" alt="" width="260" height="262"></li>
+                </ul>
+                <a target="_blank" href="https://www.instagram.com/lami.brwi.depilacja_laserowa/" class="instagram-link link">@laminacja.brwi.rzes</a>
+            </div>
+        </section>
+        <section class="answers">
+            <div class="answers-container container">                                  
+                <h2 class="title"><span class="title-accent"></span> Answers to popular questions</h2>                
+                <ul class="answers-list list">
+                    <li class="answers-item">
+                        <div class="question-wrap">
+                            <p class="subtitle-question">How often can lamination of eyelashes and eyebrows be done? 
+                            </p>
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            <!--
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            -->
+                        </div>
+                        <div id="answer" class="text-body">
+                            <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
+                            <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>
+                        </div>
+                    </li>
+
+                    <li class="answers-item">
+                        <div class="question-wrap">
+                            <p class="subtitle-question">What are the contraindications for lamination?<span id="dots"></span> 
+                            </p>
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            <!--
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            -->
+                        </div>
+                        <div id="answer" class="text-body">
+                            <p class="text-body">The procedure should be postponed in such cases:</p>
+                            <ul class="answers-list">
+                                <li class="text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
+                                <li class="text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
+                            </ul>
+                            <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
+                            <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>             
+                        </div>
+                    </li>
+
+                    <li class="answers-item">
+                        <div class="question-wrap">
+                            <p class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?<span id="dots"></span> 
+                            </p>
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            <!--
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            -->
+                        </div>
+                        <div id="answer" class="text-body">
+                            <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="answers-item">
+                        <div class="question-wrap">
+                            <p class="subtitle-question">How long does it keep?<span id="dots"></span> 
+                            </p>
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            <!--
+                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
+                                <svg class="arrow-icon" width="14" height="20">
+                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
+                                </svg>
+                            </button>
+                            -->
+                        </div>
+                        <div id="answer" class="text-body">
+                            <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
+                            </p>
+                            <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container container">
+        <div class="footer-left">
+                <div class="footer-part-one">
+                    <nav class="footer-navigation"> 
+                        <a href="./index.html" class="logo-footer">
+                            <svg class="logo-icon" width="131" height="104">
+                                <use href="./images/icons.svg#icon-logo-2"></use>
+                            </svg>
+                        </a>         
+                        <ul class="footer-list list">
+                            <li class="text-footer">
+                                <a class="menu-link-footer" href="#about">About me</a>
+                            </li>
+                            <li class="text-footer">
+                                <a class="menu-link-footer" href="#services-prices">Services/prices</a>
+                            </li>
+                            <li class="text-footer">
+                                <a class="menu-link-footer" href="#gallery">Gallery</a>
+                            </li>
+                            <li class="text-footer">
+                                <a class="menu-link-footer" href="#reviews">Reviews</a>
+                            </li>
+                            <li class="text-footer">
+                                <a class="menu-link-footer" href="#answers">Question answer</a>
+                            </li>           
+                        </ul>
+                    </nav> 
+                    <ul class="footer-contact list">
+                        <li class="footer-contact-item">
+                            <a href="tel:+48536303023 " class="social-list-link link">
+                                <svg class="social-list-icon" width="26" height="26">
+                                    <use href="./images/icons.svg#icon-call"></use>
+                                </svg>                      
+                            </a>
+                            <a href="tel:+48536303023" class=" footer-contact-link text-footer">+48 536 303 023  </a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <a target="_blank" rel="nooperer noreferrer" href="https://www.instagram.com/lami.brwi.depilacja_laserowa/" class="social-list-link link">
+                                <svg class="social-list-icon" width="26" height="26">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>                    
+                            </a>
+                            <a target="_blank" rel="nooperer noreferrer" href="https://www.instagram.com/lami.brwi.depilacja_laserowa/" class="footer-contact-link text-footer">@laminacja.brwi.rzes</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <a target="_blank" rel="nooperer noreferrer" href="https://goo.gl/maps/vRCAxsVx4nxRznrz8" class="social-list-link link">
+                                <svg class="social-list-icon" width="26" height="26">
+                                    <use href="./images/icons.svg#icon-location"></use>
+                                </svg>                     
+                            </a>
+                            <a target="_blank" rel="nooperer noreferrer" href="https://goo.gl/maps/vRCAxsVx4nxRznrz8" class="footer-contact-link text-footer">Warszawa, Wola</a>
+                        </li>
+                    </ul>
+                </div>
+
+        </div >
+            <!--
+                <div class="footer-part-three">
+                <button class="btn-footer">Get a discount</button>
+                <button class="btn-footer">Sign up</button>
+                <button class="btn-footer">Request a call back</button>
+                </div>
+            -->
+            <div class="footer-part-four">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1222.0861796647828!2d20.9309312!3d52.2220863!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb3880daaaab%3A0x39f2c994a866d215!2sJana%20Kazimierza%2064%2FU%2C%2001-248%20Warszawa!5e0!3m2!1sru!2spl!4v1677846944131!5m2!1sru!2spl"
+                width="808" height="480"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>        
+    </footer>
+    <div class="background"></div>
+    <div class="background-two"></div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form>
+                <label>
+                  E-mail
+                  <input type="email" name="email" autofocus />
+                </label>
+              
+                <label>
+                  Hasło
+                  <input type="password" name="password" />
+                </label>
+              
+                <button type="submit">Wysłać</button>
+              </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/more.js"></script>  
+    <script src="./js/more-answer.js"></script>    
+</body>
+</html>
