@@ -108,25 +108,22 @@
                         <div class="about-right-text"> 
                             <h2 class="about-title title title-accent">About me</h2>                       
                             <h3 class="about-subtitle subtitle">My name is Olia Lyashevska</h3>
-                            <p class="about-text-body text-body">I specialize in creating fashionable eyebrows, eyelashes that will highlight your beauty, guaranteeing a good look at any time of the day or night. 
-                                <!--
-                            <span id="dots">...</span>
-                            <span id="more">Dbanie o Twój wygląd i dobre samopoczucie jest dla mnie ważne. Równie ważne jest dla mnie bezpieczeństwo i zdrowie Twoich oczu oraz naturalnych rzęs. Lubię tworzyć nienaganne i oryginalne obrazy, które ukazują piękno klientek, chętnie Ci w tym pomogę!
-                            </span>
-                                -->                             
-                            </p>              
-                            <button id="btnmore" class="more"
-                                onclick="readMore()">                           
-                                To learn more
-                                <svg class="arrow-icon-more" width="11" height="11">
-                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link"></use>></use>
-                                </svg> 
-                            </button>
+                                <div class="about-text">
+                                    <p class="text-body text-body-top">I specialize in creating fashionable eyebrows, eyelashes that will highlight your beauty, guaranteeing a good look at any time of the day or night.
+                                    <span id="dots">...</span>                                    
+                                    </p>
+                                    <p id="more" class="text-body">Taking care of your appearance and well-being is important to me. The safety and health of your eyes and natural eyelashes is equally important to me. I like to create impeccable and original images that show the beauty of clients, I will be happy to help you with that! </p>
+                                </div >
+                                <button onclick="showMore()" id="btn">Read more
+                                    <svg class="arrow-icon-more" width="11" height="11">
+                                        <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link"></use>></use>
+                                </svg></button>                            
                         </div>               
                     </div>
                 </div>                
                 <p class="quote">"I believe that eyelash and eyebrow styling can look sophisticated and natural to enhance the beauty of every woman.”</p>
             </div>
+ 
         </section>
         <section class="offer">
             <div class="offer-container container">
@@ -474,7 +471,7 @@
                             </button>
                             -->
                         </div>
-                        <div id="answer" class="text-body">
+                        <div id="answer">
                             <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
                             <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>
                         </div>
@@ -497,7 +494,7 @@
                             </button>
                             -->
                         </div>
-                        <div id="answer" class="text-body">
+                        <div id="answer">
                             <p class="text-body">The procedure should be postponed in such cases:</p>
                             <ul class="answers-list">
                                 <li class="text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
@@ -525,7 +522,7 @@
                             </button>
                             -->
                         </div>
-                        <div id="answer" class="text-body">
+                        <div id="answer">
                             <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
                             </p>
                         </div>
@@ -547,7 +544,7 @@
                             </button>
                             -->
                         </div>
-                        <div id="answer" class="text-body">
+                        <div id="answer">
                             <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
                             </p>
                             <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
@@ -592,7 +589,7 @@
                                     <use href="./images/icons.svg#icon-call"></use>
                                 </svg>                      
                             </a>
-                            <a href="tel:+48536303023" class=" footer-contact-link text-footer">+48 536 303 023  </a>
+                            <a href="tel:+48536303023" class="footer-contact-link text-footer">+48 536 303 023  </a>
                         </li>
                         <li class="footer-contact-item">
                             <a target="_blank" rel="nooperer noreferrer" href="https://www.instagram.com/lami.brwi.depilacja_laserowa/" class="social-list-link link">
@@ -604,7 +601,7 @@
                         </li>
                         <li class="footer-contact-item">
                             <a target="_blank" rel="nooperer noreferrer" href="https://goo.gl/maps/vRCAxsVx4nxRznrz8" class="social-list-link link">
-                                <svg class="social-list-icon" width="26" height="26">
+                                <svg class="social-list-icon" width="28" height="28">
                                     <use href="./images/icons.svg#icon-location"></use>
                                 </svg>                     
                             </a>
@@ -656,9 +653,10 @@
               </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/more.js"></script>  
-    <script src="./js/more-answer.js"></script>    
+    <script src="./js/more-answer.js" type="module"></script>
+     
 </body>
 </html>

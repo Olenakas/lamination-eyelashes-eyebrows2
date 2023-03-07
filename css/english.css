@@ -10,7 +10,7 @@
 
 :root{
     --accent-color: #671415;
-    --accent-color-hover: #f59c1f;
+    --accent-color-hover: #676875;
     --accent-color-click:#FFBB5C;
 
     --primary-text-color-theme-light: #000501;
@@ -323,8 +323,7 @@ margin-top: 27px;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    max-width: 1284px;
+    justify-content: center;   
     margin: 0 50px;
    
  
@@ -380,8 +379,16 @@ margin-top: 27px;
 
 }
 
+.text-body-top{
+    margin-bottom: 11px;
+}
+#more{
+    display: none;
+    
 
-.more{
+
+}
+#btn{
     margin-top: 30px;
     background-color: transparent;
     border: none;
@@ -515,11 +522,9 @@ margin-top: 27px;
 
 .offer-input-wrap{
     display: inline-block;
-    width: 100%;
-   
-
-
+    width: 100%; 
 }
+
 .offer-input:not(:focus):not(:placeholder-shown):valid{
     border-color: green;
 }
@@ -554,13 +559,11 @@ margin-top: 27px;
     line-height: 55px;
     letter-spacing: 0.19em;
     color: #CEC8B6;
-
 }
 .offer-subtitle-accent{
     text-transform: uppercase;
 }
-.btn-sign-up{
-  
+.btn-sign-up{  
     padding: 14px 22px;
     background: var(--accent-color);
     border: 2px solid var(--accent-color);
@@ -572,7 +575,6 @@ margin-top: 27px;
     text-align: center;
     color: #FFFFFF;
     min-width: 276px;
-
 }
 
 .advantages-services {
@@ -605,8 +607,8 @@ margin-top: 27px;
     border: 1px solid var(--additiomal-color-decor); */
   
     background: var(--background-color-body-theme-light-secondary);
-    border: 1px solid var(--primary-text-color-theme-light);}
-  
+    border: 1px solid var(--primary-text-color-theme-light);
+}  
 
 .advantages-services-icon {
     fill: var(--additiomal-color-decor);   
@@ -631,8 +633,7 @@ margin-top: 27px;
 .overlay{
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left: 0;    
     background-color: var(--background-color-body-theme-light-secondary);
     color: var(--primary-text-color-theme-light);
     width: 100%;
@@ -641,9 +642,7 @@ margin-top: 27px;
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 12px 18px; 
     z-index: 1;
-    line-height: 28px;
-
-    
+    line-height: 28px;    
 }
 
 .advantages-services-item:hover .overlay,
@@ -699,10 +698,7 @@ overflow: hidden;
 .services-prices-list-content{
     margin-top: 23px;
     margin-bottom: 35px;
-  
-
 }
-
 .text-body-price{
     margin-bottom: 30px;
     font-family: 'Abhaya Libre ExtraBold';
@@ -711,9 +707,6 @@ overflow: hidden;
     font-size: 26px;
     line-height: 31px;
 }
-
-
-
 
 .advantages-me-top{ 
     display: flex;  
@@ -757,13 +750,8 @@ overflow: hidden;
 }
 
 
-
-
-
 .offer-form-photo-two{
     flex-direction: row-reverse;
-
-
 }
 
 
@@ -777,7 +765,6 @@ overflow: hidden;
     display: flex;
 }
 .subtitle-gallery{
-
     display: block;
     width: 405px;
     flex-wrap: nowrap;
@@ -826,16 +813,14 @@ overflow: hidden;
      font-weight: 400;
      font-size: 21px;
      line-height: 26px;
-     color: var(--accent-color);   
-
+     color: var(--accent-color); 
  }
  .arrow-icon-right{
      fill: var(--accent-color);
  }
  .instagram-container{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     align-items: center;
  }
 .instagram-list{
@@ -851,13 +836,8 @@ overflow: hidden;
     color: var(--accent-color);
     border: 1px solid var(--add-color-three);
     display:inline-block;
-    margin-top: 60px;
-    
+    margin-top: 60px;    
 }
-
-
-
-
 .answers{
     background-image:linear-gradient(rgba(0, 0, 0, 0.77),rgba(0, 0, 0, 0.77)),  url("../images-en/answer-min.png"); 
 }
@@ -870,14 +850,12 @@ overflow: hidden;
 }
 .answers-item{
     margin-top: 70px;
-
 }
 .question-wrap{
         display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--primary-text-color-theme-dark);
-    margin-bottom: 50px;
-   
+    margin-bottom: 50px;   
 }
 .subtitle-question{
 
@@ -901,9 +879,8 @@ overflow: hidden;
   
 }
 
-
 #answer > .text-body:not(:first-child){
-    margin-top: 12px;
+    margin-top: 11px;
 }
 .answers-list{
     margin-top: 8px;
@@ -958,8 +935,7 @@ overflow: hidden;
 .footer-contact-item{
     display: flex;
     align-items: center;
-    gap: 10px;
-
+    gap: 20px;
 }
 .menu-link-footer{
 
@@ -971,4 +947,21 @@ overflow: hidden;
     gap: 20px;
 }
 
- 
+.menu-link-footer:hover,
+.footer-contact-link:hover ,
+.menu-link-footer:focus,
+.footer-contact-link:focus,
+.social-list-link:hover
+{
+    color: var(--accent-color-hover);
+    fill: var(--accent-color-hover);
+
+
+}
+
+
+
+
+.footer-contact-link:hover .social-list-link{
+    fill: var(--accent-color-hover);
+}
