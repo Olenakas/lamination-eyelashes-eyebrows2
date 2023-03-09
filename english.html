@@ -40,7 +40,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="btn-call" data-modal-open>Request a call back                  
+            <button class="btn-call" data-modal-back-call-open>Request a call back                  
             </button> 
             <div class="language-select">
                 <a href="./index.html" class="language-pl">Pl</a>
@@ -55,7 +55,7 @@
                     <h1 class="heading-one heading">Eyelash lamination <br>and eyebrows </h1>
                     <h1 class="heading-two heading-accent heading">in Warsaw</h1>
                     <p class="offer-header">Leave a request online and get a 5% discount on your first visit</p>        
-                    <button class="btn-offer-header data-modal-open" type="button">Get a discount</button>
+                    <button class="btn-offer-header data-modal-open" type="button"data-modal-open>Get a discount</button>
                 </div>           
             </div>
         </section>
@@ -94,13 +94,16 @@
         <section class="invitation">
             <div class="invitation-container">
                 <strong class="title-invitation title">Come to me for eyelash and eyebrow lamination</strong>
+                
                 <button class="button-play">
                     <svg class="button-play-img" width="124" height="124">
                         <use href="./images/icons.svg#icon-button-play"></use>
                     </svg>
                 </button>
+
             </div >
         </section>
+        
         <section class="about">
             <div class="padding-top-bottom about-container container" id="about">
                 <div class="about-top">
@@ -157,8 +160,8 @@
                                             class="offer-input"
                                             placeholder="+48 _ _ _ - _ _ _ - _ _ _"
                                             required 
-                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                                            title="xxx-xxx-xx-xx"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                            title="+48-xxx-xxx-xxx"
                                             />
                                         </span>              
                                     </label> 
@@ -276,7 +279,7 @@
                             </div>
                             <div class="pice-and-btn">
                                 <p class="text-body-price">PLN 70</p>
-                                <button class="btn-sign-up">Sign up</button>                                
+                                <button class="btn-sign-up" data-modal-back-call-open>Sign up</button>                                
                             </div>        
                         </div>
                     </li>
@@ -293,7 +296,7 @@
                             </div>
                             <div class="pice-and-btn">
                                 <p class="text-body-price">PLN 80</p>
-                                <button class="btn-sign-up">Sign up</button>
+                                <button class="btn-sign-up" data-modal-back-call-open>Sign up</button>
                             </div>                       
                         </div>
                     </li>
@@ -371,8 +374,8 @@
                                             class="offer-input"
                                             placeholder="+48 _ _ _ - _ _ _ - _ _ _"
                                             required 
-                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                                            title="xxx-xxx-xx-xx"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                            title="+48-xxx-xxx-xxx"
                                             />
                                         </span>              
                                     </label> 
@@ -403,8 +406,7 @@
                 </div>
                 <div class="videogallery">
                     <h3 class="subtitle-gallery subtitle">videogallery</h3>
-                   <video
-                   width="576"
+                   <video                  
                    autoplay muted
                    controls
                    >
@@ -412,7 +414,7 @@
                    src="./video/video_2022-07-16_05-56-06.mp4"
                    type="video/mp4"
                    >
-                   </video>
+                   </video>                      
                 </div>     
             </div>
         </section>
@@ -636,7 +638,8 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <p class="subtitle-aplication subtitle">Online application</p> 
+                <p class="title-aplication title">Online application</p> 
+                <div class="decor-line"></div>
                 <form class="modal-form">
                     <p class="form-title">Leave a request online and get a 5% DISCOUNT for the first visit</p>
                     <div class="labels-wrap">
@@ -661,13 +664,13 @@
                                 class="offer-input modal-form-input"
                                 placeholder="+48 _ _ _ - _ _ _ - _ _ _"
                                 required 
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                                title="xxx-xxx-xx-xx"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                title="+48-xxx-xxx-xxx"
                                 />
                             </span>              
                         </label>
                     </div>                          
-                    <button type="submit" class="modal-btn btn-sign-up">Send
+                    <button type="submit" class="modal-btn btn-sign-up" data-modal-back-call-open>Send
                     </button>
                     <p class="user-polisy">By clicking on the button, you consent to the processing of personal data
                     </p>          
@@ -675,15 +678,63 @@
             </div>     
         </div>
     </div>
-    <div class="backdrop is hidden" data-modal-thanks>
+    <div class="backdrop is-hidden" data-modal-back-call>
+        <div class="modal modal-back-call">
+            <div class="modal-frame">
+                <button type="button" class="modal-close-btn" data-modal-back-call-close>
+                    <svg class="modal-close-btn-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="title-aplication title">Back call</p> 
+                <div class="decor-line"></div>
+                <form class="modal-form">                 
+                    <div class="labels-wrap-back-call">
+                        <label class="modal-form-field">                                                 
+                            <span class="modal-form-input-wrap">
+                                <input 
+                                type="text" 
+                                name="user_text" 
+                                class="offer-input"
+                                placeholder="What is your name?" 
+                                required 
+                                pattern="[a-zA-z]+$"
+                                title=""
+                                />
+                            </span>              
+                        </label>
+                        <label class="modal-form-field">                                                 
+                            <span class="modal-form-input-wrap">
+                                <input 
+                                type="tel" 
+                                name="user_phone" 
+                                class="offer-input modal-form-input"
+                                placeholder="+48 _ _ _ - _ _ _ - _ _ _"
+                                required 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                title="+48-xxx-xxx-xxx"
+                                />
+                            </span>              
+                        </label>
+                    </div>                          
+                    <button type="submit" class="modal-btn btn-sign-up" data-modal-back-call-open>I am waiting for a call
+                    </button>
+                    <p class="user-polisy">By clicking on the button, you consent to the processing of personal data
+                    </p>          
+                </form>   
+            </div>     
+        </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal-thanks>
         <div class="modal">
             <div class="modal-frame-thanks modal-frame">
-                <button type="button" class="modal-close-btn" data-modal-close>
+                <button type="button" class="modal-close-btn" data-modal-thanks-close>
                     <svg class="modal-close-btn-icon" width="13" height="13">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
                 <strong class="title-aplication title">Thank you request sent!</strong>
+                <div class="decor-line"></div>
                 <svg class="checkmark" width="140" height="140">
                     <use href="./images/icons.svg#icon-checkmark-1"></use>
                 </svg>
@@ -695,7 +746,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/modal-thanks.js"></script>
-
+    <script src="./js/modal-back-call.js"></script>
     <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/more.js"></script>  
     <script src="./js/more-answer.js" type="module"></script>

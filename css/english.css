@@ -826,6 +826,9 @@ color: var(--accent-color);
 .photogallery,
 .videogallery{
     display: flex;
+    gap: 10px;
+    justify-content: flex-start
+    
 }
 .subtitle-gallery{
     display: block;
@@ -1117,15 +1120,10 @@ color: #5b8381;
     text-transform: uppercase;
     
 }
-.title-aplication::after{
-    content: "";
-    position: absolute;
-    justify-content: center;  
-    
-   
+
+.decor-line{ 
     width: 280px;
-   top: 190px;
-   right: 24%;
+    margin: 20px auto 0;  
     height: 2px;  
     border-radius: 1px;
     background-image: radial-gradient(rgba(0, 0, 0, 1), 
@@ -1142,7 +1140,7 @@ color: #5b8381;
     text-align: center;    
     color: var(--primary-text-color-theme-light);
     width: 384px;
-    margin: 0 auto;
+    margin: 30px auto 0; 
 
 }
 .modal-form{
@@ -1151,6 +1149,11 @@ color: #5b8381;
 .labels-wrap{
     margin-bottom: 70px;
     margin-top: 30px;
+}
+.labels-wrap-back-call{
+    margin-bottom: 90px;
+    margin-top: 60px;
+
 }
 .modal-form-field{
     margin-bottom: 8px;
