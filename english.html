@@ -55,11 +55,11 @@
                     <h1 class="heading-one heading">Eyelash lamination <br>and eyebrows </h1>
                     <h1 class="heading-two heading-accent heading">in Warsaw</h1>
                     <p class="offer-header">Leave a request online and get a 5% discount on your first visit</p>        
-                    <button class="btn-offer-header" type="button">Get a discount</button>
+                    <button class="btn-offer-header data-modal-open" type="button">Get a discount</button>
                 </div>           
             </div>
         </section>
-        <section class="client-pain" >
+        <section class="client-pain">
             <div class="client-pain-container container padding-top-bottom">
                 <div class="client-pain-left">
                     <h2 class="client-pain-title title-accent title">Are you familiar with these problems?</h2>
@@ -67,19 +67,19 @@
                         <li class="client-pain-one">
                             <h3 class="subtitle">You're tired:</h3>
                             <ul class="text-body">
-                                <li>from daily tinting of eyelashes and eyebrows</li>
-                                <li>light, sparse and thin eyelashes</li>
-                                <li>straight eyelashes without a curl or tangled, sticking out in different directions</li>
+                                <li class="text-body-item">from daily tinting of eyelashes and eyebrows</li>
+                                <li class="text-body-item">light, sparse and thin eyelashes</li>
+                                <li class="text-body-item">straight eyelashes without a curl or tangled, sticking out in different directions</li>
                             </ul>          
                         </li>
-                        <li class="client-pain-two">
+                        <li class="client-pain-two"> 
                             <h3 class="subtitle">You want:</h3>
                             <p class="text-body"></p>
                             <ul class="text-body">
-                                <li>to make your eyelashes and eyebrows look amazing and be healthy at the same time</li>
-                                <li>take a break from lash extensions</li>
-                                <li>reduce the time for daily makeup and sleep longer, and wake up beautiful in the morning</li>
-                                <li>get away from the daily routine, relax for a couple of hours</li>
+                                <li class="text-body-item">to make your eyelashes and eyebrows look amazing and be healthy at the same time</li>
+                                <li class="text-body-item">take a break from lash extensions</li>
+                                <li class="text-body-item">reduce the time for daily makeup and sleep longer, and wake up beautiful in the morning</li>
+                                <li class="text-body-item">get away from the daily routine, relax for a couple of hours</li>
                             </ul>
                         </li>
                     </ul>
@@ -90,6 +90,7 @@
                 </div>                
             </div >
         </section>
+ 
         <section class="invitation">
             <div class="invitation-container">
                 <strong class="title-invitation title">Come to me for eyelash and eyebrow lamination</strong>
@@ -141,7 +142,7 @@
                                             type="text" 
                                             name="user_text" 
                                             class="offer-input"
-                                            placeholder="Jak masz na imię?" 
+                                            placeholder="What is your name?" 
                                             required 
                                             pattern="[a-zA-z]+$"
                                             title=""
@@ -162,7 +163,7 @@
                                         </span>              
                                     </label> 
                                 </div >                
-                                <button type="submit" class="btn-sign-up">Submit your application
+                                <button type="submit" class="btn-sign-up"data-modal-thanks-open>Submit your application
                                 </button>                    
                             </form>                     
                         </div>
@@ -270,7 +271,7 @@
                                         <li class="text-body text-body-item">Correction, which includes personal selection of shape and width (wax / tweezers)
                                         <li class="text-body text-body-item">Hair coloring or toning
                                         </li>
-                                        <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles</li>
+                                        <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles)</li>
                                     </ul>
                             </div>
                             <div class="pice-and-btn">
@@ -376,7 +377,7 @@
                                         </span>              
                                     </label> 
                                 </div >                
-                                <button type="submit" class="btn-sign-up">Submit your application
+                                <button type="submit" class="btn-sign-up" data-modal-thanks-open>Submit your application
                                 </button>                    
                             </form>                     
                         </div>
@@ -427,8 +428,7 @@
                             </div>
                             <p class="text-body">Hello, I wanted to write that I am very pleased with the eyelashes and eyebrows. After painting, they look very beautiful. I'll be right back to you</p>
                         </div>
-                        <button id="btnmore" class="sourse"
-                            onclick="readMore(closse)">                           
+                        <button class="btn-sourse">                           
                             Feedback sourse
                             <svg class="arrow-icon-right" width="11" height="11">
                                 <use href="./images/icons.svg#icon-arrow-right2" class="arrow-icon-link"></use>></use>
@@ -476,7 +476,6 @@
                             <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>
                         </div>
                     </li>
-
                     <li class="answers-item">
                         <div class="question-wrap">
                             <p class="subtitle-question">What are the contraindications for lamination?<span id="dots"></span> 
@@ -497,14 +496,13 @@
                         <div id="answer">
                             <p class="text-body">The procedure should be postponed in such cases:</p>
                             <ul class="answers-list">
-                                <li class="text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
-                                <li class="text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
+                                <li class="answers-list-item text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
+                                <li class="answers-list-item text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
                             </ul>
                             <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
                             <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>             
                         </div>
                     </li>
-
                     <li class="answers-item">
                         <div class="question-wrap">
                             <p class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?<span id="dots"></span> 
@@ -609,7 +607,6 @@
                         </li>
                     </ul>
                 </div>
-
         </div >
             <!--
                 <div class="footer-part-three">
@@ -633,27 +630,70 @@
     <div class="background-two"></div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-btn-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <form>
-                <label>
-                  E-mail
-                  <input type="email" name="email" autofocus />
-                </label>
-              
-                <label>
-                  Hasło
-                  <input type="password" name="password" />
-                </label>
-              
-                <button type="submit">Wysłać</button>
-              </form>
+            <div class="modal-frame">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-btn-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="subtitle-aplication subtitle">Online application</p> 
+                <form class="modal-form">
+                    <p class="form-title">Leave a request online and get a 5% DISCOUNT for the first visit</p>
+                    <div class="labels-wrap">
+                        <label class="modal-form-field">                                                 
+                            <span class="modal-form-input-wrap">
+                                <input 
+                                type="text" 
+                                name="user_text" 
+                                class="offer-input"
+                                placeholder="What is your name?" 
+                                required 
+                                pattern="[a-zA-z]+$"
+                                title=""
+                                />
+                            </span>              
+                        </label>
+                        <label class="modal-form-field">                                                 
+                            <span class="modal-form-input-wrap">
+                                <input 
+                                type="tel" 
+                                name="user_phone" 
+                                class="offer-input modal-form-input"
+                                placeholder="+48 _ _ _ - _ _ _ - _ _ _"
+                                required 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                title="xxx-xxx-xx-xx"
+                                />
+                            </span>              
+                        </label>
+                    </div>                          
+                    <button type="submit" class="modal-btn btn-sign-up">Send
+                    </button>
+                    <p class="user-polisy">By clicking on the button, you consent to the processing of personal data
+                    </p>          
+                </form>   
+            </div>     
         </div>
     </div>
-    <script src="./js/modal.js" type="module"></script>
+    <div class="backdrop is hidden" data-modal-thanks>
+        <div class="modal">
+            <div class="modal-frame">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-btn-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <strong class="subtitle-aplication subtitle">Thank you request sent!</strong> 
+    
+    
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-thanks.js"></script>
+
     <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/more.js"></script>  
     <script src="./js/more-answer.js" type="module"></script>

@@ -11,7 +11,7 @@
 :root{
     --accent-color: #671415;
     --accent-color-hover: #676875;
-    --accent-color-click:#FFBB5C;
+    --accent-color-hover-add:#1a0a25;
 
     --primary-text-color-theme-light: #000501;
     --primary-text-color-theme-dark:#FBFBFB;;
@@ -23,7 +23,7 @@
 
     --background-color-body-theme-light: #F7F6F3;
     --background-color-body-theme-light-secondary: #FFFEFB;   
-    --background-color-body-theme-light-third: #d9ebea;  
+    --background-color-body-theme-light-third: #C2CBC6;  
 
     --background-color-body-theme-dark:#2E2F42;
 
@@ -31,7 +31,7 @@
     --additiomal-color-decor:#6D6064;
     --add-color-three:#837569;
 
-    --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    --timing-function: 500ms cubic-bezier(0.4, 0, 0.2, 1)
     
 }
 body{
@@ -61,9 +61,11 @@ img{
 button{
     cursor: pointer;
 }
+
 .list {
     list-style: none;
 }
+
 .link{
     text-decoration: none;
     color: none;
@@ -130,7 +132,10 @@ button{
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.25);   
+    background: rgba(0, 0, 0, 0.25); 
+    position: fixed; 
+    z-index: 100;
+     
 }
 
 .header-container{
@@ -156,7 +161,7 @@ button{
 .menu{
     display: flex;
     padding-left: 56px;
-    gap: 20px;
+    gap: 35px;
  
     flex-grow: 1;
 margin-top: 27px;
@@ -171,7 +176,7 @@ margin-top: 27px;
 .menu-link-header:hover,
 .menu-link-header:focus{  
     color: var(--secondary-text-color-theme-dark);
-    text-decoration:underline; 
+    
 }
 
 .language-select{
@@ -262,7 +267,6 @@ margin-top: 27px;
 
 .btn-offer-header{
     margin-top: 73px;
-
     padding: 20px 80px;
     background: var(--accent-color);
     border: 2px solid #FFFFFF;
@@ -273,6 +277,18 @@ margin-top: 27px;
     line-height: 32px;
     text-align: center;
     color: var(--primary-text-color-theme-dark);
+}
+
+.btn-sign-up:hover,
+.btn-sign-up:focus,
+.btn-call:hover,
+.btn-call:focus,
+.btn-offer-header:hover,
+.btn-offer-header:focus
+{
+    background-color:var(--accent-color-hover-add);
+    border: 2px solid var(--additiomal-color)
+
 }
 .offer-header{
     width: 457px;
@@ -317,6 +333,8 @@ margin-top: 27px;
     right: 460px;
 }
 
+
+
 .invitation-container{
     background-image:linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.49)),  url("../images-en/invitation-min.png");
     background-repeat: no-repeat;
@@ -352,6 +370,7 @@ margin-top: 27px;
     margin-bottom: 222px;
 
 }
+
 .about-top{ 
     display: flex;  
     align-items: flex-end;
@@ -389,6 +408,7 @@ margin-top: 27px;
 
 }
 #btn{
+    position: relative;
     margin-top: 30px;
     background-color: transparent;
     border: none;
@@ -399,6 +419,34 @@ margin-top: 27px;
     color: var(--accent-color);
     margin-bottom: 13px;
 }
+
+#btn:hover .arrow-icon-more, 
+#btn:focus .arrow-icon-more,
+#btn:hover,
+#btn:focus{
+    color: var(--accent-color-hover-add);
+    fill: var(--accent-color-hover-add);
+
+}
+
+#btn:hover::after,
+#btn:focus::after{
+    background-color: var(--accent-color-hover-add);
+}
+
+
+
+#btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:-10px; 
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+    }   
+
 
 .arrow-icon-more{
     fill: var(--accent-color);
@@ -575,6 +623,7 @@ margin-top: 27px;
     text-align: center;
     color: #FFFFFF;
     min-width: 276px;
+    display: block;
 }
 
 .advantages-services {
@@ -607,8 +656,14 @@ margin-top: 27px;
     border: 1px solid var(--additiomal-color-decor); */
   
     background: var(--background-color-body-theme-light-secondary);
-    border: 1px solid var(--primary-text-color-theme-light);
-}  
+    border: 2px solid #f1f1f1;
+    transition: border-color var(--timing-function);
+}
+.advantages-services-item:hover,
+.advantages-services-item:focus{
+    border: 2px solid var(--accent-color);
+    transition: border-color var(--timing-function)
+} 
 
 .advantages-services-icon {
     fill: var(--additiomal-color-decor);   
@@ -707,6 +762,14 @@ overflow: hidden;
     font-size: 26px;
     line-height: 31px;
 }
+.text-body-item{
+    list-style-type:disc;
+    margin-left: 20px;
+
+}
+.text-body-item::marker{   
+color: var(--accent-color);    
+}
 
 .advantages-me-top{ 
     display: flex;  
@@ -804,7 +867,7 @@ overflow: hidden;
 .photo-client{
     margin-right: 40px;
 }
-.sourse{
+.btn-sourse{
     width: 218px;
     margin: 30px 0 13px auto; 
      background-color: transparent;
@@ -815,9 +878,18 @@ overflow: hidden;
      line-height: 26px;
      color: var(--accent-color); 
  }
+ .btn-sourse:hover,
+ .btn-sourse:focus,
+ .btn-sourse:hover .arrow-icon-right,
+ .btn-sourse:focus .arrow-icon-right {
+    color: var(--accent-color-hover-add);
+    fill: var(--accent-color-hover-add);
+
+ }
  .arrow-icon-right{
      fill: var(--accent-color);
  }
+
  .instagram-container{
     display: flex;
     flex-direction: column;    
@@ -838,6 +910,11 @@ overflow: hidden;
     display:inline-block;
     margin-top: 60px;    
 }
+.instagram-link:hover{
+color: var(--accent-color-hover-add);
+border: 1px solid var(--accent-color-hover-add);
+}
+
 .answers{
     background-image:linear-gradient(rgba(0, 0, 0, 0.77),rgba(0, 0, 0, 0.77)),  url("../images-en/answer-min.png"); 
 }
@@ -866,17 +943,31 @@ overflow: hidden;
     line-height: 33px;
     color: var(--primary-text-color-theme-dark); 
 }
+
+.answers-list-item{
+    list-style-type:disc;
+    margin-left: 20px;
+
+}
+.answers-list-item::marker{
+   
+color: #5b8381;
+    
+}
 .btn-answers{
     border: none;
     background-color: transparent;
+}
+.arrow-icon:hover,
+.arrow-icon:focus{
+   fill: var(var(--accent-color-hover-add)); 
 }
 .arrow-icon{
     fill: var(--primary-text-color-theme-dark);
 }
 #answer{
     background-color: var(--background-color-body-theme-light-third);
-    padding: 63px;
-  
+    padding: 63px;  
 }
 
 #answer > .text-body:not(:first-child){
@@ -960,8 +1051,127 @@ overflow: hidden;
 }
 
 
-
-
 .footer-contact-link:hover .social-list-link{
     fill: var(--accent-color-hover);
 }
+/*==========MODAL WINDOW/==========*/
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;   
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal{
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 522px;
+    height: 615px;      
+    background: var(--background-color-body-theme-light-secondary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),  url("../images-en/forn-img-min.png");
+      
+    transition: transform var(--timing-function);
+    padding: 13px;
+    margin-top: 96px;
+}
+.modal-frame{
+    width: 100%;
+    height: 100%;
+   border: 2px solid var(--additiomal-color-decor);
+  
+}
+.modal-close-btn{
+    position: absolute;
+    top: 26px;
+    right: 26px; 
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;   
+    transition: background-color var(--timing-function), fill var(--timing-function);
+}
+
+.modal-close-btn-icon{
+    transition: fill var(--timing-function);
+}
+.modal-close-btn-icon{
+    fill: var(--background-color-body-theme-light-third);
+}
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon{
+    fill: var(--additiomal-color-decor);
+}
+.subtitle-aplication {
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 58px;
+}
+.subtitle-aplication::after{
+    content: "";
+    position: absolute;
+    justify-content: center;  
+    
+    display: block;
+    width: 280px;
+   top: 127px;
+   right: 24%;
+    height: 2px;  
+    border-radius: 1px;
+    background-image: radial-gradient(rgba(0, 0, 0, 1), 
+    rgba(243, 228, 228, 1),rgba(0, 0, 0, 0));  
+}
+
+
+/*==========MODAL WINDOW/==========*/
+/*==========MODAL FORM/==========*/
+.form-title{    
+   
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;    
+    color: var(--primary-text-color-theme-light);
+    width: 384px;
+    margin: 0 auto;
+
+}
+.modal-form{
+
+}
+.labels-wrap{
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+.modal-form-field{
+    margin-bottom: 8px;
+}
+.modal-form-input-wrap{
+    display: block;
+    position: relative;
+    margin-right: 80px;
+    margin-left: 80px;
+    
+}
+
+.modal-btn{
+    margin: 0 auto;
+}
+.user-polisy{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+/*==========/MODAL FORM/==========*/
+
