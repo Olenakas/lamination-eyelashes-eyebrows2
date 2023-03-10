@@ -453,105 +453,57 @@
             </div>
         </section>
         <section class="answers">
-            <div class="answers-container container">                                  
-                <h2 class="title"><span class="title-accent"></span> Answers to popular questions</h2>                
-                <ul class="answers-list list">
-                    <li class="answers-item">
-                        <div class="question-wrap">
-                            <p class="subtitle-question">How often can lamination of eyelashes and eyebrows be done? 
-                            </p>
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            <!--
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            -->
-                        </div>
+            <div class="answers">
+                <div class="answers-container container">
+                    <h2 class="title">Answers to popular questions</h2>
+                    <div class="question-wrap">
+                        <input id="question-one" type="checkbox" name="question">
+                        <label for="question-one" class="subtitle-question">How often can lamination of eyelashes and eyebrows be done? </label>
                         <div id="answer">
-                            <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
-                            <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>
+                            <div class="answer-wrap">
+                                <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
+                                <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>                               
+                            </div>
                         </div>
-                    </li>
-                    <li class="answers-item">
-                        <div class="question-wrap">
-                            <p class="subtitle-question">What are the contraindications for lamination?<span id="dots"></span> 
-                            </p>
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            <!--
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            -->
-                        </div>
+                    </div>
+                    <div class="question-wrap">
+                        <input id="question-two" type="checkbox" name="question">
+                        <label for="question-two" class="subtitle-question">What are the contraindications for lamination?</label>
                         <div id="answer">
-                            <p class="text-body">The procedure should be postponed in such cases:</p>
-                            <ul class="answers-list">
-                                <li class="answers-list-item text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
-                                <li class="answers-list-item text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
-                            </ul>
-                            <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
-                            <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>             
+                            <div class="answer-wrap">
+                                <p class="text-body">The procedure should be postponed in such cases:</p>
+                                <ul class="answers-list">
+                                    <li class="answers-list-item text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
+                                    <li class="answers-list-item text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
+                                </ul>
+                                <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
+                                <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>
+                            </div>
+
                         </div>
-                    </li>
-                    <li class="answers-item">
-                        <div class="question-wrap">
-                            <p class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?<span id="dots"></span> 
-                            </p>
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            <!--
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            -->
-                        </div>
+                    </div>
+                    <div class="question-wrap">
+                        <input id="question-three" type="checkbox" name="question">
+                        <label for="question-three" class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?</label>
                         <div id="answer">
-                            <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
-                            </p>
+                            <div class="answer-wrap">
+                                <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
+                                </p>
+                            </div>
                         </div>
-                    </li>
-                    <li class="answers-item">
-                        <div class="question-wrap">
-                            <p class="subtitle-question">How long does it keep?<span id="dots"></span> 
-                            </p>
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-down2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            <!--
-                            <button id="btnanswers" class="btn-answers" onclick="readMore()">
-                                <svg class="arrow-icon" width="14" height="20">
-                                    <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link" ></use>
-                                </svg>
-                            </button>
-                            -->
-                        </div>
+                    </div>
+                    <div class="question-wrap">
+                        <input id="question-four" type="checkbox" name="question">
+                        <label for="question-four" class="subtitle-question">How long does it keep?</label>
                         <div id="answer">
-                            <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
-                            </p>
-                            <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
+                            <div class="answer-wrap">
+                                <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
+                                </p>
+                                <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </div>
         </section>
     </main>
     <footer class="footer">
