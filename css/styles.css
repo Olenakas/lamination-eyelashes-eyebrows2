@@ -88,6 +88,7 @@ button{
     border-radius: 10px;
     padding-top: 100px;
     padding-bottom: 100px;
+
 }
 /*text*/
 .heading{
@@ -229,7 +230,6 @@ button{
 
 
 
-
 .language-select{
     display: flex;
     gap: 14px;   
@@ -293,19 +293,35 @@ button{
     justify-content: center;
     padding: 12px 21px;
     gap: 12px;
-    background: var(--background-color-body-theme-light);
-    border: 1px solid var(--accent-color);
+    background: var(--accent-color-hover);
+    border: 1px solid var(--accent-color-hover);
     border-radius: 15px;
     font-family: 'Inter';
     font-size: 14px;
     line-height: 20px;
-    color: var(--accent-color);
+    color: var(--primary-text-color-theme-dark);
+}
+
+.btn-call{
+    padding: 8px 15px;
+    color: var(--accent-color-hover);
+    background: var(--background-color-body-theme-light);
+    border: 1px solid var(--accent-color-hover);
+
+}
+
+.icon-call{
+    stroke: var(--accent-color-hover);
+    fill: transparent;
 }
 
 .more {
     border: 1px solid var(--additiomal-color-decor);
     border-radius: 5px;
-    font-style: italic;    
+    font-style: italic; 
+    color: var(--additiomal-color-decor);
+    background: var(--background-color-body-theme-light);
+
 
 }
 
@@ -317,10 +333,7 @@ button{
 }
 
 
-.icon-call{
-    stroke: var(--accent-color);
-    fill: transparent;
-}
+
 
 
 .btn-answers{
@@ -391,8 +404,8 @@ button{
 .hero-left{
     /*background-image:linear-gradient(rgba(240, 235, 231, 0.1),rgba(240, 235, 231, 0.1)), url(/images/girl-face-1-min.png);*/
     position: relative;
-    padding-bottom: 161px;
-    padding-top: 123px;
+    /* padding-bottom: 161px; */
+    padding-top: 201px;
     width: 351px;   
     
 }
@@ -412,7 +425,7 @@ button{
     position: relative;   
     left: 252px;
     width: 510px;
-    margin-bottom: 158px;   
+    margin-bottom: 90px;   
 }
 .hero-right{
     position: relative;
@@ -446,6 +459,7 @@ button{
     display: flex;
     align-items: center; 
     justify-content: space-between;   
+    gap: 30px;
 }
 .about-left{ 
     display: flex;
@@ -455,7 +469,7 @@ button{
     max-width: 577px;  
 }
 .about-left-text{
-    margin-left: 30%;
+    /* margin-left: 30%; */
 }
 .quote > .text-body{
     text-align: center;
@@ -594,6 +608,8 @@ button{
 .services-prices-eyebrows{
     justify-content: end;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
 } 
 
 
@@ -810,15 +826,27 @@ button{
 /*gallery*/
 .gallery {
 }
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .gallery-list {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+ 
 }
 
 .gallery-item {
 }
 /*reviews */
 .reviews {
+}
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reviews-wrap{
@@ -844,10 +872,17 @@ button{
 /*instagram */
 .instagram {
 }
+.instagram-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 .instagram-list {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 .instagram-item {
 }
@@ -936,6 +971,7 @@ button{
     margin-bottom: 30px;
 }
 
+
 /*==========MODAL WINDOV/==========*/
 .backdrop{
     position: fixed;
@@ -993,3 +1029,25 @@ button{
 .modal-close-btn:focus .modal-close-btn-icon{
     fill: var(--primary-text-color-theme-dark);
 }
+
+.pagination-wrap{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+.pagination-active {
+    background-color: #df815b;
+    border-radius: 6px;
+    /* border: 1px solid var(--background-color-body-theme-dark); */
+
+    width: 28px;
+    height: 13px;
+  }
+  .pagination {
+    background-color: #dbb6a7;
+    border-radius: 100%;
+
+    width: 13px;
+    height: 13px;
+  }

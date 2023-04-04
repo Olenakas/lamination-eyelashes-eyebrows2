@@ -45,8 +45,50 @@
             <div class="language-select">
                 <a href="./index.html" class="language-pl">Pl</a>
                 <a href="./english.html" class="language-en">En</a>
-            </div>        
+            </div>  
+            <button type="button" class="btn-mobile-menu-open js-open-menu">
+                <svg class="mobile-menu-open-icon">
+                  <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+              </button>      
         </div>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <div class="mobile-menu-container">
+                <button type="button" class="btn-close-menu js-close-menu">
+                    <svg class="close-icon-menu">
+                    <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="mobil-menu-content">
+                    <div class="language-select-mobil">
+                        <a href="./index.html" class="language-pl language-pl-mobil">Pl</a>
+                        <a href="./english.html" class="language-en language-en-mobil">En</a>
+                    </div> 
+        
+                    <ul class="mobile-menu-list list">
+                        <li class="text-header menu-mobile-item">
+                            <a class="menu-mobile-link link" href="#about">About me</a>
+                        </li>
+                        <li class="text-header menu-mobile-item">
+                            <a class="menu-mobile-link link" href="#services-prices">Services / prices</a>
+                        </li>
+                        <li class="text-header menu-mobile-item">
+                            <a class="menu-mobile-link link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="text-header menu-mobile-item">
+                            <a class="menu-mobile-link link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="text-header menu-mobile-item">
+                            <a class="menu-mobile-link link" href="#answers">Question answer</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-call btn-call-mobile" data-modal-back-call-open>Request a call back                  
+                </button>
+            </div>
+          </div>
+          
+
     </header>
     <main>
         <section class="hero">
@@ -62,7 +104,7 @@
         <section class="client-pain">
             <div class="client-pain-container container padding-top-bottom">
                 <div class="client-pain-left">
-                    <h2 class="client-pain-title title-accent title">Are you familiar with these problems?</h2>
+                    <h2 class="client-pain-title title-accent">Are you familiar with these problems?</h2>
                     <ul class="client-pain-list list">
                         <li class="client-pain-one">
                             <h3 class="subtitle">You're tired:</h3>
@@ -110,7 +152,7 @@
                     <img src="./images-en/about-me-min.png" alt="" width="576" height="722" class="about-img">
                     <div class="about-right">                        
                         <div class="about-right-text"> 
-                            <h2 class="about-title title title-accent">About me</h2>                       
+                            <h2 class="about-title title-accent">About me</h2>                       
                             <h3 class="about-subtitle subtitle">My name is Olia Lyashevska</h3>
                                 <div class="about-text">
                                     <p class="text-body text-body-top">I specialize in creating fashionable eyebrows, eyelashes that will highlight your beauty, guaranteeing a good look at any time of the day or night.
@@ -130,7 +172,7 @@
  
         </section>
         <section class="offer">
-            <div class="offer-container container">
+            <div class="padding-top-bottom  offer-container container">
                 <div class="offer-wrap">
                     <p class="text-offer-olia-liashevska">OLIA LIASHEVSKA</p>
                     <p class="text-offer-discount">DISCOUNT</p>
@@ -177,7 +219,7 @@
         </section>
         <section class="advantages-services">
             <div class="padding-top-bottom advantages-services-container container">
-                    <h2 class="advantages-services-title title-accent title">Benefits of the procedure lamination of eyelashes and eyebrows</h2> 
+                    <h2 class="advantages-services-title title-accent">Benefits of the procedure lamination of eyelashes and eyebrows</h2> 
                 <ul class="advantages-services-list list">
                     <li class="advantages-services-item">                        
                         <div class="advantages-wrap">
@@ -256,12 +298,12 @@
                 </ul>   
             </div>
         </section>
-        <section  class="marquee-conteiner container">
+        <section  class="padding-top-bottom marquee-conteiner container">
             <p class="marquee">The main trend of recent years is natural beauty</p>
         </section>
         <section class="services-prices">
             <div class="padding-top-bottom services-prices-container container" id="services-prices">         
-                <h2 class="title-accent title">List of services and prices</h2>           
+                <h2 class="title-accent">List of services and prices</h2>           
                 <ul class="services-prices-list list">
                     <li class="services-prices-eyelashes">
                         <img src="./images-en/services-prices-eyelashes-min.png" alt="" width="571" height="386" class="img-price">
@@ -277,7 +319,7 @@
                                         <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles)</li>
                                     </ul>
                             </div>
-                            <div class="pice-and-btn">
+                            <div class="price-and-btn">
                                 <p class="text-body-price">PLN 70</p>
                                 <button class="btn-sign-up" data-modal-back-call-open>Sign up</button>                                
                             </div>        
@@ -294,7 +336,7 @@
                                     <li class="text-body text-body-item">Botox (growth activator, nourishes, moisturizes and strengthens hair follicles)</li>
                                 </ul>
                             </div>
-                            <div class="pice-and-btn">
+                            <div class="price-and-btn">
                                 <p class="text-body-price">PLN 80</p>
                                 <button class="btn-sign-up" data-modal-back-call-open>Sign up</button>
                             </div>                       
@@ -304,12 +346,12 @@
             </div>
         </section>
         <section class="advantages-me">
-            <div class="advantages-me-container container">
+            <div class="padding-top-bottom  advantages-me-container container">
                 <div class="advantages-me-top">
                     <img src="./images-en/advantages-me-min.png" alt="" width="576" height="722" class="img-advantages-me">               
                     <div class="advantages-me-right">
                         <div class="advantages-me-text">
-                            <h2 class="advantages-me-title title-accent title">Why do clients contact me</h2>             
+                            <h2 class="advantages-me-title title-accent">Why do clients contact me</h2>             
                             <ul class="advantages-me-list">
                                 <li class="text-body text-body-item">Convenient location</li>
                                 <li class="text-body text-body-item">Cozy atmosphere and hospitality</li>
@@ -338,7 +380,7 @@
                 </div>
                 <div class="guarantee">
                     <h2 class="title">Guarantee</h2>
-                    <h3 class="subtitle">I provide a 7 day warranty</h3>
+                    <h3 class="guarantee-subtitle subtitle">I provide a 7 day warranty</h3>
                     <p class="text-body">If during this time you notice significant shortcomings in the work performed, I will redo everything absolutely free of charge</p>
                 </div>                 
             </div>
@@ -390,11 +432,10 @@
             </div>
         </section>       
         <section class="gallery">
-            <div class="gallery-container container">                              
-                <h2 class="title-accent title">Gallery of works</h2>
-
-                <div class="subtitle photogallery">
-                    <h3 class="subtitle-gallery subtitle"> Photo gallery</h3>                      
+            <div class="padding-top-bottom gallery-container container" id="gallery">                              
+                <h2 class="title-accent">Gallery of works</h2>
+                <div class="photogallery">
+                    <h3 class="subtitle-gallery subtitle"> Photo gallery</h3>
                     <ul class="gallery-list list">
                         <li class="gallery-item">
                             <img src="./images-en/gallery-1-min.png" alt="" width="378" height="378" class="img-photogallery">
@@ -445,25 +486,62 @@
                             <img src="./images-en/gallery-16-min.jpg" alt="" width="378" height="378" class="img-photogallery">
                         </li>
                     </ul>
-                </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination-active"></div>
+                        <div class="pagination"></div>
+                        <div class="pagination"></div>
+                    </div>
+                </div>                  
+               
                 <div class="videogallery">
                     <h3 class="subtitle-gallery subtitle">videogallery</h3>
-                   <video                  
-                   autoplay muted
-                   controls
-                   class="videogallery-video"
-                   >
-                   <source
-                   src="./video/video_2022-07-16_05-56-06.mp4"
-                   type="video/mp4"                   
-                   >
-                   </video>                      
+                    <div class="video-wrap">
+                        <video                  
+                        autoplay muted
+                        controls
+                        class="videogallery-video"
+                        >
+                        <source
+                        src="./video/video_2022-07-16_05-56-06.mp4"
+                        type="video/mp4"                   
+                        >
+                        </video>     
+      
+                        <video                  
+                        autoplay muted
+                        controls
+                        class="videogallery-video"
+                        >
+                        <source
+                        src="./video/video_2022-07-16_05-57-33.mp4"
+                        type="video/mp4"                   
+                        >
+                        </video> 
+                        <video                  
+                        autoplay muted
+                        controls
+                        class="videogallery-video"
+                        >
+                        <source
+                        src="./video/video_2022-07-16_05-57-33.mp4"
+                        type="video/mp4"                   
+                        >
+                        </video>
+                        
+
+                    </div>
+                    <div class="pagination-wrap">
+                        <div class="pagination-active"></div>
+                        <div class="pagination"></div>
+                        <div class="pagination"></div>
+                    </div>
+                
                 </div>     
             </div>
         </section>
         <section class="reviews">
-            <div class="padding-top-bottom container" id="reviews">                               
-                 <h2 class="title title-accent">Customer reviews</h2>              
+            <div class="padding-top-bottom reviews-container container" id="reviews">                               
+                 <h2 class="title-accent">Customer reviews</h2>              
                 <div class="reviews-wrap">
                     <div class="reviews-content">
                         <div class="">
@@ -481,72 +559,80 @@
                     </button>
                     </div>
                 </div>
+                <div class="pagination-wrap">
+                    <div class="pagination-active"></div>
+                    <div class="pagination"></div>
+                    <div class="pagination"></div>
+                </div>
             </div>
         </section>
         <section class="instagram">
-            <div class="instagram-container container">             
-                <h2 class="title-accent  title">Instagram</h2>
+            <div class="padding-top-bottom instagram-container container">             
+                <h2 class="title-accent">Instagram</h2>
                 <ul class="instagram-list list">
                     <li class="instagram-item"><img src="./images-en/instagram-img-1-min.png" alt="" width="260" height="262"></li>
                     <li class="instagram-item"><img src="./images-en/instagram-img-2-min.png" alt="" width="260" height="262"></li>
                     <li class="instagram-item"><img src="./images-en/instagram-img-3-min.png" alt="" width="260" height="262"></li>
                     <li class="instagram-item"><img src="./images-en/instagram-img-4-min.png" alt="" width="260" height="262"></li>
                 </ul>
+                <div class="pagination-wrap">
+                    <div class="pagination-active"></div>
+                    <div class="pagination"></div>
+                    <div class="pagination"></div>
+                </div>
                 <a target="_blank" href="https://www.instagram.com/lami.brwi.depilacja_laserowa/" class="instagram-link link">@laminacja.brwi.rzes</a>
             </div>
         </section>
-        <section class="answers">
-            <div class="answers">
-                <div class="answers-container container">
-                    <h2 class="title">Answers to popular questions</h2>
-                    <div class="question-wrap">
-                        <input id="question-one" type="checkbox" name="question">
-                        <label for="question-one" class="subtitle-question">How often can lamination of eyelashes and eyebrows be done? </label>
-                        <div id="answer">
-                            <div class="answer-wrap">
-                                <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
-                                <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="question-wrap">
-                        <input id="question-two" type="checkbox" name="question">
-                        <label for="question-two" class="subtitle-question">What are the contraindications for lamination?</label>
-                        <div id="answer">
-                            <div class="answer-wrap">
-                                <p class="text-body">The procedure should be postponed in such cases:</p>
-                                <ul class="answers-list">
-                                    <li class="answers-list-item text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
-                                    <li class="answers-list-item text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
-                                </ul>
-                                <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
-                                <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="question-wrap">
-                        <input id="question-three" type="checkbox" name="question">
-                        <label for="question-three" class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?</label>
-                        <div id="answer">
-                            <div class="answer-wrap">
-                                <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="question-wrap">
-                        <input id="question-four" type="checkbox" name="question">
-                        <label for="question-four" class="subtitle-question">How long does it keep?</label>
-                        <div id="answer">
-                            <div class="answer-wrap">
-                                <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
-                                </p>
-                                <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
-                            </div>
+        <section class="answers">            
+            <div class="padding-top-bottom answers-container container" id="answers">
+                <h2 class="title">Answers to popular questions</h2>
+                <div class="question-wrap">
+                    <input id="question-one" type="checkbox" name="question">
+                    <label for="question-one" class="subtitle-question">How often can lamination of eyelashes and eyebrows be done? </label>
+                    <div id="answer">
+                        <div class="answer-wrap">
+                            <p class="text-body">There is an opinion that lamination of eyelashes is not a safe procedure, and it should be carried out no more than once a year. To dispel this myth, it is necessary to understand that keratin is a physiological protein for the hair, thanks to which the eyelashes thicken and heal. In addition, with each subsequent eyelash lamination procedure, keratin tends to accumulate in the thickness of the hair, and therefore, with each subsequent procedure, the effect of lamination becomes more noticeable and long-lasting.
+                            <p class="text-body">The recommended time interval between the first and second eyelash lamination is about one month, then the procedure can be repeated every two months.</p>                               
                         </div>
                     </div>
                 </div>
+                <div class="question-wrap">
+                    <input id="question-two" type="checkbox" name="question">
+                    <label for="question-two" class="subtitle-question">What are the contraindications for lamination?</label>
+                    <div id="answer">
+                        <div class="answer-wrap">
+                            <p class="text-body">The procedure should be postponed in such cases:</p>
+                            <ul class="answers-list">
+                                <li class="answers-list-item text-body">the presence of diseases of the eyes and eyelids of an inflammatory nature, conjunctivitis, barley;</li>
+                                <li class="answers-list-item text-body">allergy, manifested by lacrimation, a feeling of sand in the eye and other signs of damage to the organ of vision.</li>                   
+                            </ul>
+                            <p class="text-body">In addition, the procedure is not carried out if the client has intolerance to any component of the solution used.</p>
+                            <p class="text-body">It is undesirable to carry out lamination of eyelashes during pregnancy, especially in the first trimester.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrap">
+                    <input id="question-three" type="checkbox" name="question">
+                    <label for="question-three" class="subtitle-question">Is it possible to do lamination of eyelashes in lenses?</label>
+                    <div id="answer">
+                        <div class="answer-wrap">
+                            <p class="text-body">In addition, after the lamination of the eyelashes, there will be no difficulties with putting on and removing contact lenses, because there are no restrictions after this manipulation, you can safely touch both the eyelids and the eyelashes, this will not cause any damage to the result.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-wrap">
+                    <input id="question-four" type="checkbox" name="question">
+                    <label for="question-four" class="subtitle-question">How long does it keep?</label>
+                    <div id="answer">
+                        <div class="answer-wrap">
+                            <p class="text-body">The effect after lamination of eyelashes, as a rule, is long-term and retains its original appearance until the beginning of their physiological change.                                 
+                            </p>
+                            <p class="text-body">After two weeks with the change of eyelashes, the result of lamination descends. When laminating eyelashes, the hairs are strengthened not only from the outside, but also from the inside. Botulinum toxin, nourishing the hair follicles, prolongs their life cycle, and therefore the change of eyelashes is slower, which means that the effect after the procedure is longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -743,7 +829,7 @@
     <script src="./js/modal.js"></script>
     <script src="./js/modal-thanks.js"></script>
     <script src="./js/modal-back-call.js"></script>
-    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal-menu.js" type="module"></script>
     <script src="./js/more.js"></script>  
     <script src="./js/more-answer.js" type="module"></script>
      
