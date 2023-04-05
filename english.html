@@ -820,13 +820,13 @@
                         <label class="modal-form-field">                                                 
                             <span class="modal-form-input-wrap">
                                 <input 
-                                type="text" 
-                                name="user_text" 
+                                type="text"
+                                name="user-name"
+                                placeholder="What is your name?"
                                 class="offer-input"
-                                placeholder="What is your name?" 
-                                required 
-                                pattern="[a-zA-z]+$"
-                                title=""
+                                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                                minlength="2"
+                                required
                                 />
                             </span>              
                         </label>
@@ -838,8 +838,8 @@
                                 class="offer-input modal-form-input"
                                 placeholder="+48 _ _ _ - _ _ _ - _ _ _"
                                 required 
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                                title="+48-xxx-xxx-xxx"
+                                pattern="[+0-9]"
+                                title="+48 _ _ _ - _ _ _ - _ _ _"
                                 />
                             </span>              
                         </label>
