@@ -1,14 +1,16 @@
-function readMoreAnswer() {
-  let moreText = document.getElementById("answer");
-  let arrowIconLink = document.getElementById("arrow-icon-link");
+const btnAnswers = document.querySelectorAll(".btn-answers");
 
-  if (moreText.style.display === "none") {
-    moreText.style.display = "block";
-    arrowIconLink.setAttribute("href", "./images/icons.svg#icon-right-arrow");
-    arrowIconLink.classList.add("right");
-  } else {
-    moreText.style.display = "none";
-    arrowIconLink.setAttribute("href", "./images/icons.svg#icon-arrow-down2");
-    arrowIconLink.classList.remove("right");
-  }
-}
+btnAnswers.forEach((btn) => {
+  const answer = btn.nextElementSibling;
+  const arrowIcon = btn.querySelector(".arrow-icon");
+
+  btn.addEventListener("click", () => {
+    if (answer.style.display === "none") {
+      answer.style.display = "block";
+      arrowIcon.classList.add("active");
+    } else {
+      answer.style.display = "none";
+      arrowIcon.classList.remove("active");
+    }
+  });
+});
