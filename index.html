@@ -85,32 +85,35 @@
             <img src="./images/ola-min.png" alt="" width="620" height="481" />
             <div class="about-left">
               <h2 class="about-title title-accent">O mnie</h2>
-              <div class="about-left-text">
-                <h3 class="about-subtitle subtitle">Mam na imię Ola</h3>
-                <div class="about-text">
-                  <p class="about-text-body text-body">
-                    Specjalizuję się w tworzeniu modnych brwi, rzęs, które
-                    podkreślą Twoją urodę, gwarantując dobry wygląd o każdej
-                    porze dnia i nocy
-                  </p>
-                  <p id="more" class="about-text-body text-body">
-                    Dbanie o swój wygląd i dobre samopoczucie jest dla mnie
-                    ważne. Równie ważne jest dla mnie bezpieczeństwo i zdrowie
-                    Twoich oczu i naturalnych rzęs. Lubię tworzyć nienaganne i
-                    oryginalne zdjęcia ukazujące piękno klientek, chętnie Ci w
-                    tym pomogę!
-                  </p>
-                </div>
-                <button onclick="showMorePn()" id="btn" class="more">
-                  Czytaj więcej
+
+              <div class="about-text">
+                <p class="about-text-body text-body">
+                  Specjalizuję się w tworzeniu modnych brwi, rzęs, które
+                  podkreślą Twoją urodę, gwarantując dobry wygląd o każdej porze
+                  dnia i nocy
+                </p>
+                <p
+                  id="more"
+                  class="about-text-body text-body"
+                  style="display: none"
+                >
+                  Dbanie o swój wygląd i dobre samopoczucie jest dla mnie ważne.
+                  Równie ważne jest dla mnie bezpieczeństwo i zdrowie Twoich
+                  oczu i naturalnych rzęs. Lubię tworzyć nienaganne i oryginalne
+                  zdjęcia ukazujące piękno klientek, chętnie Ci w tym pomogę!
+                </p>
+              </div>
+              <button onclick="showMorePn()" id="btn" class="more">
+                <span class="btn-text">Czytaj więcej</span>
+                <span class="arrow-icon-container">
                   <svg class="arrow-icon" width="11" height="11">
                     <use
                       href="./images/icons.svg#icon-arrow-down2"
                       class="arrow-icon-link"
                     ></use>
                   </svg>
-                </button>
-              </div>
+                </span>
+              </button>
             </div>
           </div>
           <p class="quote">
@@ -123,7 +126,7 @@
         </div>
       </section>
       <section class="advantages-services">
-        <div class="container">
+        <div class="container advantages-container">
           <div class="title-wrap">
             <h2 class="title-accent">Korzyści</h2>
             <h2 class="title">z zabiegu laminowanie rzęs i brwi</h2>
@@ -543,69 +546,120 @@
             <h2 class="title-accent">Odpowiedzi</h2>
             <h2 class="title">na popularne pytania</h2>
           </div>
-
           <ul class="answers-list list">
-            <li class="answers-item subtitle">
-              <p>Czy można wykonać laminację rzęs w soczewkach?</p>
-              <button class="btn-answers">
-                <svg class="arrow-icon" width="14" height="20">
-                  <use
-                    href="./images/icons.svg#icon-arrow-down2"
-                    class="arrow-icon-link"
-                  ></use>
-                </svg>
-              </button>
-              <p id="answer" class="text-body">
-                Tutaj odpowiedź na pierwsze pytanie
+            <li class="spoiler answers-item">
+              <div class="spoiler-title">
+                <p class="spoiler-title-content subtitle">
+                  Jak często można wykonać laminację rzęs i brwi?
+                </p>
+                <button class="btn-answers spoiler-title-button">
+                  <svg class="arrow-icon" width="14" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-down2"
+                      class="arrow-icon-link"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="spoiler-content text-body">
+                <br />
+                Istnieje opinia, że ​​laminowanie rzęs nie jest zabiegiem
+                bezpiecznym i powinno się je wykonywać nie częściej niż raz w
+                roku. Aby obalić ten mit, należy zrozumieć, że keratyna jest
+                fizjologicznym białkiem włosa, dzięki któremu rzęsy zagęszczają
+                się i goją. Ponadto z każdym kolejnym zabiegiem laminowania rzęs
+                keratyna ma tendencję do gromadzenia się w grubości włosa,
+                dlatego z każdym kolejnym zabiegiem efekt laminacji staje się
+                bardziej zauważalny i długotrwały. <br />
+                Zalecany odstęp czasowy pomiędzy pierwszą a drugą laminacją rzęs
+                to około miesiąc, następnie zabieg można powtarzać co dwa
+                miesiące.
               </p>
             </li>
-            <li class="answers-item subtitle">
-              <p>Jak długo się przechowuje?</p>
-              <button class="btn-answers">
-                <svg class="arrow-icon" width="14" height="20">
-                  <use
-                    href="./images/icons.svg#icon-arrow-down2"
-                    class="arrow-icon-link"
-                  ></use>
-                </svg>
-              </button>
-              <p id="answer2" class="text-body">Tutaj odpowiedź na 2 pytanie</p>
+            <li class="spoiler answers-item">
+              <div class="spoiler-title">
+                <p class="spoiler-title-content subtitle">
+                  Jakie są przeciwwskazania do laminowania?
+                </p>
+                <button class="btn-answers spoiler-title-button">
+                  <svg class="arrow-icon" width="14" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-down2"
+                      class="arrow-icon-link"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="spoiler-content text-body">
+                <br />
+                <p>Procedurę należy odroczyć w takich przypadkach:</p>
+                <p>
+                  obecność chorób oczu i powiek o charakterze zapalnym,
+                  zapalenie spojówek, jęczmień;
+                </p>
+                <p>
+                  alergia objawiająca się łzawieniem, uczuciem piasku w oku i
+                  innymi objawami uszkodzenia narządu wzroku.
+                </p>
+                <p>
+                  Ponadto zabieg nie jest wykonywany w przypadku nietolerancji u
+                  klienta któregokolwiek składnika zastosowanego rozwiązania.
+                </p>
+                <p>
+                  Niepożądane jest przeprowadzanie laminowania rzęs w czasie
+                  ciąży, zwłaszcza w pierwszym trymestrze.
+                </p>
+              </div>
             </li>
-            <li class="answers-item subtitle">
-              <p>Jak często można wykonać laminację rzęs i brwi?</p>
-              <button class="btn-answers">
-                <svg class="arrow-icon" width="14" height="20">
-                  <use
-                    href="./images/icons.svg#icon-arrow-down2"
-                    class="arrow-icon-link"
-                  ></use>
-                </svg>
-              </button>
-              <p id="answer3" class="text-body">Tutaj odpowiedź na 3 pytanie</p>
+            <li class="spoiler answers-item">
+              <div class="spoiler-title">
+                <p class="spoiler-title-content subtitle">
+                  Czy można wykonać laminację rzęs w soczewkach?
+                </p>
+                <button class="btn-answers spoiler-title-button">
+                  <svg class="arrow-icon" width="14" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-down2"
+                      class="arrow-icon-link"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="spoiler-content text-body">
+                <br />
+                In addition, after the lamination of the eyelashes, there will
+                be no difficulties with putting on and removing contact lenses,
+                because there are no restrictions after this manipulation, you
+                can safely touch both the eyelids and the eyelashes, this will
+                not cause any damage to the result.
+              </p>
             </li>
-            <li class="answers-item subtitle">
-              <p>Czy można wykonać laminację rzęs w soczewkach?</p>
-              <button class="btn-answers">
-                <svg class="arrow-icon" width="14" height="20">
-                  <use
-                    href="./images/icons.svg#icon-arrow-down2"
-                    class="arrow-icon-link"
-                  ></use>
-                </svg>
-              </button>
-              <p id="answer4" class="text-body">Tutaj odpowiedź na 4 pytanie</p>
-            </li>
-            <li class="answers-item subtitle">
-              <p>Czy można wykonać laminację rzęs w soczewkach?</p>
-              <button class="btn-answers">
-                <svg class="arrow-icon" width="14" height="20">
-                  <use
-                    href="./images/icons.svg#icon-arrow-down2"
-                    class="arrow-icon-link"
-                  ></use>
-                </svg>
-              </button>
-              <p id="answer5" class="text-body">Tutaj odpowiedź na 5 pytanie</p>
+            <li class="spoiler answers-item">
+              <div class="spoiler-title">
+                <p class="spoiler-title-content subtitle">
+                  Jak długo się przechowuje?
+                </p>
+                <button class="btn-answers spoiler-title-button">
+                  <svg class="arrow-icon" width="14" height="20">
+                    <use
+                      href="./images/icons.svg#icon-arrow-down2"
+                      class="arrow-icon-link"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="spoiler-content text-body">
+                <br />
+                Efekt po laminacji rzęs z reguły jest długotrwały i zachowuje
+                swój pierwotny wygląd do początku ich fizjologicznej przemiany.
+                <br />
+                Po dwóch tygodniach od zmiany rzęs efekt laminacji schodzi.
+                Podczas laminowania rzęs włoski są wzmacniane nie tylko od
+                zewnątrz, ale także od wewnątrz. Toksyna botulinowa, odżywiając
+                cebulki włosowe, przedłuża ich cykl życia, dzięki czemu zmiana
+                rzęs jest wolniejsza, co oznacza, że ​​efekt po zabiegu jest
+                dłuższy.
+              </p>
             </li>
           </ul>
         </div>
@@ -743,8 +797,8 @@
         </form>
       </div>
     </div>
-    <!-- <script src="./js/modal.js" type="module"></script>
-    <script src="./js/mobile-menu.js" type="module"></script> -->
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
     <script src="./js/more-pn.js"></script>
     <script src="./js/more-answer.js"></script>
   </body>

@@ -8,8 +8,10 @@
 }
 
 :root {
+  /* --accent-color: #df815b;
+  --accent-color-hover: #e77447; */
   --accent-color: #15100d;
-  --accent-color-hover: #df815b;
+  --accent-color-hover: #000000;
   --accent-color-click: #ffbb5c;
 
   --primary-text-color-theme-light: #15100d;
@@ -70,14 +72,15 @@ button {
 .section {
 }
 .padding-top-bottom {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .offer-container,
 .gallery-container,
 .instagram-container,
-.footer-container {
+.footer-container,
+.advantages-container {
   background: var(--background-color-body-theme-light-secondary);
   border-radius: 10px;
   padding-top: 100px;
@@ -92,20 +95,21 @@ button {
   letter-spacing: 0.05em;
 }
 
-.heading-accent,
+/* .heading-accent,
 .title-accent {
   font-family: "Andrade Pro Italic";
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
   color: var(--secondary-text-color-theme-light);
-}
+} */
 
 .title-accent:not(.title-accent > .about-left) {
   text-align: center;
 }
 
-.title {
+.title,
+.title-accent {
   font-style: normal;
   font-weight: 300;
   font-size: 35px;
@@ -141,7 +145,7 @@ button {
 
 .title-wrap {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -276,33 +280,32 @@ button {
   justify-content: center;
   padding: 12px 21px;
   gap: 12px;
-  background: var(--accent-color-hover);
-  border: 1px solid var(--accent-color-hover);
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 15px;
   font-family: "Inter";
   font-size: 14px;
   line-height: 20px;
   color: var(--primary-text-color-theme-dark);
 }
+.more {
+  border-radius: 5px;
+  font-style: italic;
+  color: var(--accent-color);
+
+  background: none;
+}
 
 .btn-call {
   padding: 8px 15px;
-  color: var(--accent-color-hover);
+  color: var(--accent-color);
   background: var(--background-color-body-theme-light);
-  border: 1px solid var(--accent-color-hover);
+  border: 1px solid var(--accent-color);
 }
 
 .icon-call {
-  stroke: var(--accent-color-hover);
+  stroke: var(--accent-color);
   fill: transparent;
-}
-
-.more {
-  border: 1px solid var(--additiomal-color-decor);
-  border-radius: 5px;
-  font-style: italic;
-  color: var(--additiomal-color-decor);
-  background: var(--background-color-body-theme-light);
 }
 
 .instagram-link {
@@ -336,26 +339,27 @@ button {
 .btn-offer:focus,
 .btn-sign-up:focus,
 .instagram-link:focus,
-.more:focus,
-.more:hover,
-.more:hover .arrow-icon,
 .btn-call:hover .icon-call,
-.btn-call:focus .icon-call,
-.more:hover .arrow-icon {
-  color: var(--accent-color-hover);
+.btn-call:focus .icon-call {
+  background-color: var(--accent-color-hover);
   border-color: var(--accent-color-hover);
   stroke: var(--accent-color-hover);
   fill: var(--accent-color-hover);
+  color: var(--primary-text-color-theme-dark);
+  fill: var(--background-color-body-theme-light);
+}
+
+.more:hover,
+.more:hover .arrow-icon {
+  border-color: var(--accent-color-hover);
 }
 
 .btn-call:active,
 .btn-offer:active,
 .btn-sign-up:active,
-.more:active,
 .instagram-link :active,
 .btn-answers:active,
-.btn-call:active .icon-call,
-.more:active .arrow-icon {
+.btn-call:active .icon-call {
   background: var(--accent-color-hover);
   color: var(--primary-text-color-theme-dark);
   border-color: var(--accent-color-hover);
@@ -392,16 +396,17 @@ button {
 
 .heading-two {
   position: relative;
-  left: 136px;
-  top: 11px;
+  left: 0px;
+  /* top: 11px; */
   width: 510px;
 }
 .heading-three {
   position: relative;
-  left: 252px;
+  left: 0px;
   width: 510px;
   margin-bottom: 90px;
 }
+
 .hero-right {
   position: relative;
   z-index: -1;
@@ -449,9 +454,10 @@ button {
 #more {
   display: none;
 }
-
-.more {
-  display: block;
+.arrow-icon-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; /* Расстояние между текстом и иконкой */
 }
 
 .invitation-container {
@@ -756,27 +762,27 @@ button {
 }
 
 .advantages-me-img-1 {
-  top: 437px;
+  top: 337px;
   left: 0;
 }
 
 .advantages-me-img-2 {
-  top: 290px;
+  top: 147px;
   right: 143px;
 }
 
 .advantages-me-img-3 {
-  top: 838px;
+  top: 638px;
   left: 29px;
 }
 
 .advantages-me-img-4 {
-  top: 652px;
+  top: 452px;
   right: 0;
 }
 
 .advantages-me-img-5 {
-  top: 948px;
+  top: 748px;
   right: 302px;
 }
 
@@ -842,46 +848,67 @@ button {
 }
 
 /*answers*/
+
+.spoiler {
+  cursor: pointer;
+  outline: 1px solid var(--accent-color);
+  border-radius: 50px;
+  padding: 25px 35px;
+  height: 100%;
+}
+
+.spoiler-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spoiler-content:first-child {
+  padding-top: 50px;
+  /* white-space: pre-line; */
+}
+.spoiler-title-button {
+  transition: transform 0.5s ease-in-out;
+}
+
+.spoiler.show .spoiler-title-button {
+  transform: rotateZ(180deg);
+}
+
+.spoiler-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in-out;
+}
+
+.spoiler-content::before {
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: -8px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--background-color-body-theme-light-third);
+}
+.spoiler.show .spoiler-content {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
 .answers {
 }
 .answers-list {
   max-width: 840px;
   margin: 0 auto;
 }
-.answers-item {
-  display: flex;
-  flex-direction: column;
 
-  padding: 25px 35px;
-  border: 1px solid var(--accent-color-hover);
-  border-radius: 50px;
-}
 .answers-item:not(:last-child) {
   margin-bottom: 42px;
-}
-
-.arrow-icon {
-}
-#answer,
-#answer2,
-#answer3,
-#answer4,
-#answer5 {
-  display: none;
-  margin-top: 25px;
 }
 
 .arrow-icon-link {
   width: 14px;
   height: 20px;
-}
-
-.arrow-icon {
-  transition: transform 0.5s ease-in-out;
-}
-
-.arrow-icon.active {
-  transform: rotate(180deg);
 }
 
 /*footer*/
@@ -913,7 +940,7 @@ button {
   margin-right: 16px;
 }
 .social-list-icon {
-  stroke: var(--accent-color);
+  stroke: var(--primary-text-color-theme-light);
   fill: transparent;
 }
 
