@@ -46,7 +46,7 @@
             <option value="en">En</option>
             <option value="uk">Uk</option>
             </select> -->
-        <button class="btn-call" data-modal-open>
+        <button class="btn-call" data-action="open-modal">
           Poproś o oddzwonienie
           <svg class="icon-call" width="26" height="26">
             <use href="./images/icons.svg#icon-call"></use>
@@ -775,31 +775,53 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop js-backdrop">
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-btn" data-action="close-modal">
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form>
-          <label>
-            E-mail
-            <input type="email" name="email" autofocus />
-          </label>
-
-          <label>
-            Hasło
-            <input type="password" name="password" />
-          </label>
-
-          <button type="submit">Wysłać</button>
+        <p class="title-aplication title">Online application</p>
+        <form class="js-register-form login-form-modal">
+          <p class="form-title">
+            Leave a request online and get a 5% DISCOUNT for the first visit
+          </p>
+          <div class="labels-wrap">
+            <label class="modal-form-field">
+              <span class="modal-form-input-wrap">
+                <input
+                  type="text"
+                  name="user-name"
+                  placeholder="What is your name?"
+                  class="offer-input"
+                  minlength="2"
+                  required
+                />
+              </span>
+            </label>
+            <label class="modal-form-field">
+              <span class="modal-form-input-wrap">
+                <input
+                  type="tel"
+                  name="user_phone"
+                  class="offer-input modal-form-input"
+                  placeholder="+48 _ _ _ - _ _ _ - _ _ _"
+                  required
+                />
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="button-send-modal-form">Wysłać</button>
         </form>
       </div>
+
+
+      </div>
     </div>
-    <script src="./js/modal.js" type="module"></script>
-    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal-pn.js" type="module"></script>
     <script src="./js/more-pn.js"></script>
     <script src="./js/more-answer.js"></script>
+    <script src="./js/register-form.js"></script>
   </body>
 </html>
