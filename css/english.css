@@ -932,8 +932,8 @@ button{
     height: 10.5%;
 }
 .background-two{
-    top: 6872px;
-    height: 16.5%;
+    top: 6944px;
+    height: 17.2%;
 }
 
 .offer-wrap{
@@ -1710,6 +1710,7 @@ overflow: auto;
     .reviews-content{
         border: 1px solid var var(--background-color-body-theme-light-secondary);
         padding: 35px 54px;
+        width: 845px;
     }
 }
 

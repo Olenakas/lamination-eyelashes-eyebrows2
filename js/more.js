@@ -1,15 +1,15 @@
-// function showMore() {
-//   let dots = document.getElementById("dots");
-//   let moreText = document.getElementById("more");
-//   let btnText = document.getElementById("btn");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more";
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less";
-//     moreText.style.display = "inline";
-//   }
-// }
+function showMore() {
+  let moreText = document.getElementById("more");
+  let btnText = document.querySelector(".btn-text");
+  let arrowIconLink = document.querySelector(".arrow-icon-link");
+  document.getElementById("btn").classList.toggle("active");
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "block";
+    arrowIconLink.setAttribute("href", "./images/icons.svg#icon-arrow-up2");
+  } else {
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+    arrowIconLink.setAttribute("href", "./images/icons.svg#icon-arrow-down2");
+  }
+}

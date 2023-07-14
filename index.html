@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="main-header">
       <div class="header-container container">
         <nav class="navigation-header">
           <a href="./index.html" class="logo-header logo link">olia.lam</a>
@@ -54,19 +54,19 @@
         </button>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="hero">
         <div class="hero-container container">
           <div class="hero-left">
-            <h1 class="heading-one heading">Laminacja</h1>
-            <h1 class="heading-two heading-accent">rzęs i brwi</h1>
-            <h1 class="heading-three heading">w Warszawie</h1>
+            <h1 class="heading">Laminacja</h1>
+            <h1 class="heading">rzęs i brwi</h1>
+            <h1 class="heading">w Warszawie</h1>
             <h3 class="offer-subtitle">
               Zostaw zapytanie online i otrzymaj
               <span class="offer-subtitle-accent">5% rabatu</span> na pierwszą
               wizytę
             </h3>
-            <button class="btn-offer" type="button">Dostać zniżkę</button>
+            <button class="btn-offer" data-action="open-modal-discount" type="button">Dostać zniżkę</button>
           </div>
           <div class="hero-right">
             <img
@@ -80,7 +80,7 @@
         </div>
       </section>
       <section class="about">
-        <div class="padding-top-bottom about-container container" id="about">
+        <div class="about-container container margin-top" id="about">
           <div class="about-top">
             <img src="./images/ola-min.png" alt="" width="620" height="481" />
             <div class="about-left">
@@ -120,12 +120,12 @@
             "Uważam, że stylizacja rzęs i brwi może wyglądać wyrafinowanie i
             naturalnie, podkreślając urodę każdej kobiety”.
           </p>
-          <div class="invitation-container">
-            <img src="./images/work-min.png" alt="" width="" height="500" />
-          </div>
-        </div>
+
       </section>
-      <section class="advantages-services">
+      <section class=" invitation-container container margin-top">
+      
+      </section>
+      <section class="advantages-services margin-top">
         <div class="container advantages-container">
           <div class="title-wrap">
             <h2 class="title-accent">Korzyści</h2>
@@ -221,9 +221,9 @@
           </ul>
         </div>
       </section>
-      <section class="services-prices">
+      <section class="services-prices margin-top">
         <div
-          class="padding-top-bottom services-prices-container container"
+          class="services-prices-container container"
           id="services-prices"
         >
           <div class="title-wrap">
@@ -298,7 +298,7 @@
           </ul>
         </div>
       </section>
-      <section class="offer">
+      <section class="offer margin-top">
         <div class="offer-container container">
           <div class="offer-wrap">
             <p class="text-offer-olia-liashevska">Olia Liashevska</p>
@@ -354,8 +354,8 @@
           </div>
         </div>
       </section>
-      <section class="advantages-me">
-        <div class="advantages-me-container padding-top-bottom container">
+      <section class="advantages-me margin-top">
+        <div class="advantages-me-container container">
           <h2 class="title-wrap title">
             Dlaczego klienci kontaktują się ze
             <span class="title-accent-advantages-me">mną</span>
@@ -416,7 +416,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery margin-top">
         <div class="gallery-container container" id="gallery">
           <div class="title-wrap">
             <h2 class="title-accent">Galeria</h2>
@@ -455,9 +455,9 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews margin-top">
         <div
-          class="padding-top-bottom reviews-container container"
+          class="reviews-container container"
           id="reviews"
         >
           <div class="title-wrap">
@@ -490,7 +490,7 @@
           </div>
         </div>
       </section>
-      <section class="instagram">
+      <section class="instagram margin-top">
         <div class="instagram-container container">
           <h2 class="title-wrap title-accent">Instagram</h2>
           <ul class="instagram-list list">
@@ -540,8 +540,8 @@
           >
         </div>
       </section>
-      <section class="answers">
-        <div class="padding-top-bottom container">
+      <section class="answers margin-top">
+        <div class="container">
           <div class="title-wrap">
             <h2 class="title-accent">Odpowiedzi</h2>
             <h2 class="title">na popularne pytania</h2>
@@ -665,7 +665,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer margin-top">
       <div class="footer-container container">
         <nav class="footer-navigation">
           <a href="./index.html" class="logo link">olia.lam</a>
@@ -775,6 +775,52 @@
         </form>
       </div>
     </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top">
+      <svg class="scroll-top-arrow-icon" width="11" height="11">
+        <use href="./images/icons.svg#icon-arrow-up2" class="arrow-icon-link"></use>
+      </svg>
+    </a>
+      <div class="backdrop js-backdrop-discount">
+        <div class="modal">
+          <button type="button" class="modal-close-btn" data-action="close-modal-discount">
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="title-aplication title">Aplicacja online</p>
+      
+          <h3 class="modal-offer-subtitle offer-subtitle">
+            Zostaw zapytanie online i otrzymaj
+            <span class="offer-subtitle-accent">5% rabatu</span> na
+            pierwszą wizytę
+          </h3>
+          <form class="modal-offer-form offer-form">
+            <div class="offer-label-wrap">
+              <label class="offer-field">
+                <span class="offer-input-wrap">
+                  <input type="text" name="user_text" class="offer-input" placeholder="Jak masz na imię?" required
+                    pattern="[a-zA-z]+$" title="" />
+                </span>
+              </label>
+              <label class="offer-field">
+                <span class="offer-input-wrap">
+                  <input type="tel" name="user_phone" class="offer-input" placeholder="+48 _ _ _ - _ _ _ - _ _ _" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                </span>
+              </label>
+            </div>
+            <button type="submit" class="btn-sign-up">
+              Zapisać się
+            </button>
+          </form>
+          <p class="modal-add-text">Klikając w przycisk wyrażasz zgodę na przetwarzanie danych osobowych
+          </p>
+        </div>
+      </div>
+
+
+
     <div class="backdrop js-backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn" data-action="close-modal">
@@ -782,46 +828,39 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="title-aplication title">Online application</p>
-        <form class="js-register-form login-form-modal">
-          <p class="form-title">
-            Leave a request online and get a 5% DISCOUNT for the first visit
-          </p>
-          <div class="labels-wrap">
-            <label class="modal-form-field">
-              <span class="modal-form-input-wrap">
-                <input
-                  type="text"
-                  name="user-name"
-                  placeholder="What is your name?"
-                  class="offer-input"
-                  minlength="2"
-                  required
-                />
+        <p class="title-aplication title">Oddzwanianie</p>       
+        <form class="modal-offer-form offer-form">
+          <div class="offer-label-wrap">
+            <label class="offer-field">
+              <span class="offer-input-wrap">
+                <input type="text" name="user_text" class="offer-input" placeholder="Jak masz na imię?" required
+                  pattern="[a-zA-z]+$" title="" />
               </span>
             </label>
-            <label class="modal-form-field">
-              <span class="modal-form-input-wrap">
-                <input
-                  type="tel"
-                  name="user_phone"
-                  class="offer-input modal-form-input"
-                  placeholder="+48 _ _ _ - _ _ _ - _ _ _"
-                  required
-                />
+            <label class="offer-field">
+              <span class="offer-input-wrap">
+                <input type="tel" name="user_phone" class="offer-input" placeholder="+48 _ _ _ - _ _ _ - _ _ _" required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
               </span>
             </label>
           </div>
-          <button type="submit" class="button-send-modal-form">Wysłać</button>
+          <button type="submit" class="btn-sign-up">
+            Czekam na telefon
+          </button>
         </form>
-      </div>
-
-
+        <p class="modal-add-text">Klikając w przycisk wyrażasz zgodę na przetwarzanie danych osobowych
+        </p>        
       </div>
     </div>
+
+ 
+ 
+
     <script src="./js/modal-pn.js" type="module"></script>
+    <script src="./js/modal-pn-discount.js" type="module"></script>
     <script src="./js/more-pn.js"></script>
-    <script src="./js/more-answer.js"></script>
-    <script src="./js/register-form.js"></script>
+    <script src="./js/more-answer.js"></script>   
+    <script src="./js/header.js"></script>
+    <script src="./js/scroll-up.js"></script>
   </body>
 </html>

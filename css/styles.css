@@ -11,7 +11,7 @@
   /* --accent-color: #df815b;
   --accent-color-hover: #e77447; */
   --accent-color: #15100d;
-  --accent-color-hover: #000000;
+  --accent-color-hover: #df815b;
   --accent-color-click: #ffbb5c;
 
   --primary-text-color-theme-light: #15100d;
@@ -71,9 +71,8 @@ button {
 }
 .section {
 }
-.padding-top-bottom {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.margin-top{
+  margin-top: 120px;
 }
 
 .offer-container,
@@ -120,8 +119,7 @@ button {
   font-style: italic;
   font-size: 25px;
   line-height: 39px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 100px;  
   width: 587px;
   text-align: center;
   margin: 0 auto;
@@ -164,11 +162,16 @@ button {
 }
 
 /*header*/
+.header {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header.hidden {
+  opacity: 0;
+}
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
   background: var(--background-color-body-theme-light);
   position: fixed;
@@ -373,12 +376,15 @@ button {
 }
 
 /*hero*/
-.hero {
-}
+
 
 .hero-container {
   display: flex;
   justify-content: space-between;
+  padding-right: 0;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hero-background-min.png");
+  border-radius: 10px;
 }
 
 .hero-left {
@@ -386,33 +392,16 @@ button {
   position: relative;
   /* padding-bottom: 161px; */
   padding-top: 201px;
-  width: 351px;
+  
 }
 
-.heading-one {
-  position: relative;
-  left: 0px;
-}
 
-.heading-two {
-  position: relative;
-  left: 0px;
-  /* top: 11px; */
-  width: 510px;
-}
-.heading-three {
-  position: relative;
-  left: 0px;
-  width: 510px;
-  margin-bottom: 90px;
-}
 
 .hero-right {
-  position: relative;
-  z-index: -1;
+
 }
 
-.background-img {
+/* .background-img {
   position: absolute;
   right: 0;
   top: 0;
@@ -421,7 +410,7 @@ button {
   border-radius: 5px;
   background-color: var(--background-color-body-theme-light-secondary);
   z-index: -2;
-}
+} */
 
 .img-hero {
   border-radius: 5px;
@@ -461,15 +450,14 @@ button {
 }
 
 .invitation-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../images/work-min.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1440px;
-  margin: 0 50px;
+
+ width: 100%;
+  height: 500px;
+
 }
 
 /*advantages-services*/
@@ -637,11 +625,13 @@ button {
   width: 353px;
 }
 .offer-subtitle {
+  margin-top: 70px;
   margin-bottom: 70px;
   font-size: 22px;
   font-weight: 600;
   line-height: 155.52%;
   color: var(--background-color-body-theme-dark);
+  max-width: 490px;
 }
 
 .offer-subtitle-accent {
@@ -762,27 +752,27 @@ button {
 }
 
 .advantages-me-img-1 {
-  top: 337px;
+  bottom: 548px;
   left: 0;
 }
 
 .advantages-me-img-2 {
-  top: 147px;
+  bottom: 677px;
   right: 143px;
 }
 
 .advantages-me-img-3 {
-  top: 638px;
+  bottom: 110px;
   left: 29px;
 }
 
 .advantages-me-img-4 {
-  top: 452px;
+  bottom: 402px;
   right: 0;
 }
 
 .advantages-me-img-5 {
-  top: 748px;
+  bottom: 0;
   right: 302px;
 }
 
@@ -989,13 +979,14 @@ body.show-modal .modal {
 }
 
 .modal {
-  width: 408px;
-  height: 576px;
-  padding: 13px;
-  margin-top: 96px;
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  max-width: 450px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color-body-theme-light);  
   border-radius: 4px;
   transition: transform var(--timing-function);
 }
@@ -1028,21 +1019,21 @@ body.show-modal .modal {
   fill: var(--primary-text-color-theme-dark);
 }
 
-.login-form-modal {
-  max-width: 320px;
+
+.modal-offer-subtitle{
+  margin-top: 50px;  
+  width: 311px;
+  text-align: center;
+}
+.modal-offer-form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
 }
-
-.login-form-modal label {
-  margin-bottom: 16px;
-}
-
-.login-form-modal input,
-.login-form-modal button {
-  width: 100%;
-  padding: 4px;
-  font: inherit;
+.modal-add-text{
+  margin-top: 50px;
+  text-align: center;
 }
 
 .pagination-wrap {
@@ -1064,4 +1055,27 @@ body.show-modal .modal {
 
   width: 13px;
   height: 13px;
+}
+
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+.scroll-top.show {
+  display: block;
+}
+.scroll-top-arrow-icon{
+  fill: var(--additiomal-color);
 }
