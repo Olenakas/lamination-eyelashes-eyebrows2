@@ -16,6 +16,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  
   </head>
   <body>
     <header class="header" id="main-header">
@@ -422,37 +424,29 @@
             <h2 class="title-accent">Galeria</h2>
             <h2 class="title">prac</h2>
           </div>
-          <ul class="gallery-list list">
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-1-min.png"
-                alt=""
-                width="378"
-                height="378"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-2-min.png"
-                alt=""
-                width="378"
-                height="378"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/gallery-3-min.png"
-                alt=""
-                width="378"
-                height="378"
-              />
-            </li>
-          </ul>
-          <div class="pagination-wrap">
-            <div class="pagination-active"></div>
-            <div class="pagination"></div>
-            <div class="pagination"></div>
-          </div>
+              <div class="swiper mySwiper">
+                  <ul class="gallery-list list swiper-wrapper">
+                      <li class="gallery-item swiper-slide">
+                        <img src="./images/gallery-1-min.png" alt="" width="378" height="378" />
+                      </li>
+                      <li class="gallery-item swiper-slide">
+                        <img src="./images/gallery-2-min.png" alt="" width="378" height="378" />
+                      </li>
+                      <li class="gallery-item swiper-slide">
+                        <img src="./images/gallery-3-min.png" alt="" width="378" height="378" />
+                      </li>
+                      <li class="gallery-item swiper-slide">
+                        <img src="./images/gallery-3-min.png" alt="" width="378" height="378" />
+                      </li>
+                      <li class="gallery-item swiper-slide">
+                        <img src="./images/gallery-3-min.png" alt="" width="378" height="378" />
+                      </li>
+                  </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+              </div>
         </div>
       </section>
       <section class="reviews margin-top">
@@ -532,6 +526,7 @@
             <div class="pagination"></div>
             <div class="pagination"></div>
           </div>
+        </div>
           <a
             target="_blank"
             href="https://www.instagram.com/lami.brwi.depilacja_laserowa/"
@@ -853,8 +848,8 @@
       </div>
     </div>
 
- 
- 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script src="./js/modal-pn.js" type="module"></script>
     <script src="./js/modal-pn-discount.js" type="module"></script>
@@ -862,5 +857,6 @@
     <script src="./js/more-answer.js"></script>   
     <script src="./js/header.js"></script>
     <script src="./js/scroll-up.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
