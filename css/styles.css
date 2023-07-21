@@ -1034,6 +1034,48 @@ button {
 
 
  /*==========Swiper==========*/
+
+
+
+ .my-swiper-pagination { 
+  width: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+
+    
+ }
+
+ .my-swiper-pagination .my-pagination-bullet {
+    background-color: #dbb6a7;
+      border-radius: 50%;
+      width: 13px;
+      height: 13px;
+      display: block;
+ }
+
+ .my-swiper-pagination .my-pagination-bullet-current {
+    background-color: #df815b;
+      border-radius: 6px;    
+      width: 28px;
+      height: 13px;
+ }
+
+ .my-pagination-bullet-clickable {}
+
+
+
+
+
+
+
+
+
+
+
+
 .pagination-wrap {
   display: flex;
   gap: 10px;
@@ -1090,11 +1132,10 @@ button {
  }
 
 
+
  /*==========Стрілки==========*/
  .swiper-button-prev::after,
  .swiper-button-next::after {
   color: var(--add-color-three);
   font-size: 80px;
  }
-
- 

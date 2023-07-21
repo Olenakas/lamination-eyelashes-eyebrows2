@@ -1,10 +1,13 @@
-   const swiper = new Swiper(".mySwiper", {
+   const swiper = new Swiper(".swiper", {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       pagination: {
-         el: '.swiper-pagination',
+         el: '.my-swiper-pagination',
+         bulletClass: 'my-pagination-bullet',
+         bulletActiveClass: '.my-pagination-bullet-current',
+         clackabletClass: '.my-pagination-bullet-clickable',
          clickable: true,
          dynamicBullets:true,
       },
