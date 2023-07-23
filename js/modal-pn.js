@@ -9,10 +9,12 @@ refs.closeModalBtn.addEventListener("click", onCloseModal);
 refs.backdrop.addEventListener("click", onBackdropClick);
 
 function onOpenModal() {
+  document.body.style.overflow = "hidden";
   window.addEventListener("keydown", onEscKeyPress);
   refs.backdrop.classList.add("show-modal");
 }
 function onCloseModal() {
+  document.body.style.overflow = "";
   window.removeEventListener("keydown", onEscKeyPress);
   refs.backdrop.classList.remove("show-modal");
 }

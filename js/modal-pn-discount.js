@@ -13,11 +13,15 @@ refs.closeModalBtnDiscount.addEventListener("click", onCloseModalDiscount);
 refs.backdropDiscount.addEventListener("click", onBackdropClickDiscount);
 
 function onOpenModalDiscount() {
+  document.body.style.overflow = "hidden";
+
   window.addEventListener("keydown", onEscKeyPress);
   refs.backdropDiscount.classList.add("show-modal");
 }
 
 function onCloseModalDiscount() {
+  document.body.style.overflow = "";
+  
   window.removeEventListener("keydown", onEscKeyPress);
   refs.backdropDiscount.classList.remove("show-modal");
 }
