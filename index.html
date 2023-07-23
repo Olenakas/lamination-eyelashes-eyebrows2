@@ -24,7 +24,7 @@
       <div class="header-container container">
         <nav class="navigation-header">
           <a href="./index.html" class="logo-header logo link">olia.lam</a>
-          <ul class="menu list">
+          <ul class="menu-header list">
             <li class="text-header">
               <a class="menu-link-header" href="#services-prices"
                 >Usługi / Ceny</a
@@ -54,7 +54,47 @@
             <use href="./images/icons.svg#icon-call"></use>
           </svg>
         </button>
+        <button type="button" class="btn-mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+              <div class="mobile-menu-container">
+                <button type="button" class="btn-close-menu js-close-menu">
+                  <svg class="close-icon-menu" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <div class="mobil-menu-content">
+                  <ul class="mobile-menu-list list">
+                    <li class="text-header menu-mobile-item">
+                      <a class="menu-mobile-link link js-menu-item" href="#about">O mnie</a>
+                    </li>
+                    <li class="text-header menu-mobile-item">
+                      <a class="menu-mobile-link link js-menu-item" href="#services-prices">Usługi / Ceny</a>
+                    </li>
+                    <li class="text-header menu-mobile-item">
+                      <a class="menu-mobile-link link js-menu-item" href="#gallery">Galeria</a>
+                    </li>
+                    <li class="text-header menu-mobile-item">
+                      <a class="menu-mobile-link link js-menu-item" href="#reviews">Opinie</a>
+                    </li>
+                    <li class="text-header menu-mobile-item">
+                      <a class="menu-mobile-link link js-menu-item" href="#answers">Odpowiedzi na popularne pytania</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn-call-menu" data-action="open-modal">
+                  Poproś o oddzwonienie
+                  <svg class="icon-call" width="26" height="26">
+                    <use href="./images/icons.svg#icon-call"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
       </div>
+
     </header>
     <main class="main">
       <section class="hero">
@@ -62,7 +102,7 @@
           <div class="hero-left">
             <h1 class="heading">Laminacja <br> rzęs i brwi <br> w Warszawie</h1>
             <h3 class="offer-subtitle">
-              Zostaw zapytanie online i otrzymaj
+              Zostaw zapytanie online i otrzymaj 
               <span class="offer-subtitle-accent">5% rabatu</span> na pierwszą
               wizytę
             </h3>
@@ -117,11 +157,11 @@
 
       </section>
       <section class="invitation margin-top">
-        <div class="invitation-container container "></div>
+        <div class="invitation-container"></div>
       
       </section>
       <section class="advantages-services margin-top">
-        <div class="container advantages-container">
+        <div class="advantages-container">
           <div class="title-wrap">
             <h2 class="title">Korzyści z zabiegu laminowanie rzęs i brwi</h2>      
           </div>
@@ -280,7 +320,7 @@
         </div>
       </section>
       <section class="offer margin-top">
-        <div class="offer-container container">
+        <div class="offer-container">
           <div class="offer-wrap">
             <p class="text-offer-olia-liashevska">Olia Liashevska</p>
             <p class="text-offer-discount">Zniżka</p>
@@ -393,7 +433,7 @@
         </div>
       </section>
       <section class="gallery margin-top">
-        <div class="gallery-container container" id="gallery">
+        <div class="gallery-container" id="gallery">
           <div class="title-wrap">
             <h2 class="title">Galeria prac</h2>
           </div>
@@ -468,23 +508,26 @@
         </div>
       </section>
       <section class="instagram margin-top">
-        <div class="instagram-container container">
+        <div class="instagram-container">
           <div class="title-wrap">
             <h2 class="title">Instagram</h2>
         </div>
         <ul class="instagram-list list">
               <li class="instagram-item">
-                <img src="./images/instagram-img-4-min.jpg" alt="" width="260" height="262" />
+                <img src="./images/instagram-img-4-min.jpg" alt="" width="236" height="237" />
               </li>
               <li class="instagram-item">
-                <img src="./images/instagram-img-5-min.jpg" alt="" width="260" height="262" />
+                <img src="./images/instagram-img-5-min.jpg" alt="" width="236" height="237" />
               </li>
               <li class="instagram-item">
-                <img src="./images/instagram-1-min.png" alt="" width="260" height="262" />
+                <img src="./images/instagram-1-min.png" alt="" width="236" height="237" />
               </li>
               <li class="instagram-item">
-                <img src="./images/instagram-2-min.png" alt="" width="260" height="262" />
-              </li>            
+                <img src="./images/instagram-2-min.png" alt="" width="236" height="237" />
+              </li>   
+              <li class="instagram-item">
+                <img src="./images/instagram-4-min.png" alt="" width="236" height="237" />
+              </li>
         </ul>
           <!-- <div class="pagination-wrap">
             <div class="pagination-active"></div>
@@ -496,7 +539,7 @@
         </div>       
       </section>
       <section class="answers margin-top">
-        <div class="container">
+        <div class="container" id="answers">
           <div class="title-wrap">
             <h2 class="title">Odpowiedzi na popularne pytania</h2>      
           </div>
@@ -620,7 +663,7 @@
       </section>
     </main>
     <footer class="footer margin-top">
-      <div class="footer-container container">
+      <div class="footer-container ">
         <nav class="footer-navigation">
           <a href="./index.html" class="logo link">olia.lam</a>
           <ul class="footer-list list">
@@ -638,13 +681,10 @@
             <li class="text-footer">
               <a class="menu-link-footer" href="#reviews">Opinie</a>
             </li>
-            <li class="text-footer">
-              <a class="menu-link-footer" href="#answers">Pytanie/Odpowiedź</a>
-            </li>
           </ul>
         </nav>
 
-        <ul class="list">
+        <ul class="footer-list-contact">
           <li class="footer-contact-item">
             <a href="tel:+48536303023 " class="social-list-link link">
               <svg class="social-list-icon" width="26" height="26">
@@ -809,7 +849,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+    <script src="./js/modal-menu.js"></script> 
     <script src="./js/modal-pn.js" type="module"></script>
     <script src="./js/modal-pn-discount.js" type="module"></script>
     <script src="./js/more-pn.js"></script>
