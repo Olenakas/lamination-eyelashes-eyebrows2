@@ -2,9 +2,11 @@ const refs = {
   openModalBtn: document.querySelector('[data-action="open-modal"]'),
   closeModalBtn: document.querySelector('[data-action="close-modal"]'),
   backdrop: document.querySelector(".js-backdrop"),
+  mobileCallBtn: document.getElementById("mobileCallBtn"),
 };
 
 refs.openModalBtn.addEventListener("click", onOpenModal);
+refs.mobileCallBtn.addEventListener("click", onOpenModal); 
 refs.closeModalBtn.addEventListener("click", onCloseModal);
 refs.backdrop.addEventListener("click", onBackdropClick);
 
