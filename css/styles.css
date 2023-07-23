@@ -79,7 +79,7 @@ button {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .container {
     width: 644px;
     padding-inline: 50px;
@@ -98,7 +98,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .container {
     width: 1440px;
     padding-inline: 0;
@@ -202,7 +202,7 @@ button {
   text-decoration: none;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .offer-subtitle{
     max-width: 350px;
   }
@@ -215,7 +215,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .heading {
       text-align: start;
       font-size: 60px;  
@@ -382,11 +382,11 @@ button {
 
 
 .hero-img {
-  width: 272px;
-  height: 222px;
+  width: 300px;
+  height: 240px;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .hero-container {
     width: 644px;
     }
@@ -397,12 +397,12 @@ button {
   }
 
   .hero-img {
-    width: 644px;
-    height: 528px;          
+    width: 744px;
+    height: 610px;          
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .hero-container {
       display: flex;
       flex-direction: row;
@@ -427,6 +427,10 @@ button {
 /*-header-*/
 
 .header {
+  width: 100%;
+  background: var(--background-color-body-theme-light);
+  position: fixed;
+  z-index: 100;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -434,26 +438,15 @@ button {
   opacity: 0;
 }
 
-.header {
-  width: 100%;
-  background: var(--background-color-body-theme-light);
-  position: fixed;
-  z-index: 100;
-}
-
 .header-container {
+  padding-inline: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-@media screen and (min-width: 1440px) {
-  .header-container {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
+  width: 320px;
+  margin: 25px auto;
 }
 
 .navigation-header {
@@ -546,16 +539,25 @@ button {
 } */
 
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1489px) {
   .menu-header,
   .btn-call {
     display: none;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 844px) {
+  .header-container {
+    width: 744px;   
+  }
+}
+
+@media screen and (min-width: 1490px) {
   .logo-header {
     margin-right: 301px;
+  }
+  .header-container {
+    width: 1440px;    
   }
 }
 
@@ -606,7 +608,7 @@ button {
     height: 386px;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .about-top {
     display: flex;
     align-items: center;
@@ -625,7 +627,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .about-top {
     display: flex;
     flex-direction: row;
@@ -653,7 +655,7 @@ button {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
 .advantages-services-list { 
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -769,12 +771,13 @@ button {
 .pice-and-btn {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 24px;
   gap: 30px;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .services-prices-list {
     gap: 80px;
   }
@@ -790,13 +793,11 @@ button {
 
   .pice-and-btn {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 48px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .services-prices-list {
     gap: 100px;
   }
@@ -814,6 +815,9 @@ button {
     justify-content: end;
     align-items: center;
     align-items: center;
+  }
+  .pice-and-btn {
+    justify-content: start;  
   }
 }
 
@@ -925,7 +929,7 @@ button {
   transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 743px) {
+@media screen and (max-width: 843px) {
   .text-offer-olia-liashevska {
 display: none;
   }
@@ -937,13 +941,13 @@ display: none;;
 
 
 
-@media screen and (max-width: 1439px) { 
+@media screen and (max-width: 1489px) { 
   .offer-img {
     display: none;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .offer-container {
       display: flex;
       padding-left: 155px;
@@ -1017,13 +1021,13 @@ display: none;;
   right: 302px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1489px) {
   .advantages-me-img-wrap{
     display: none;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
 .advantages-me-list {
     margin-left: 332px;
   }
@@ -1085,7 +1089,7 @@ display: none;;
   align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .reviews-wrap {
       width: 758px;
     }
@@ -1230,9 +1234,9 @@ display: none;;
   gap: 30px;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 844px) {
   .footer-container {
-  width: 644px;
+  width: 744px;
   padding: 80px 40px;
   justify-content: center;
   align-items: flex-start;
@@ -1253,7 +1257,7 @@ display: none;;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1490px) {
   .footer-container {
       display: flex;
       justify-content: space-between;
@@ -1552,14 +1556,14 @@ display: none;;
        height: 28px;
      }
   
-     @media screen and (min-width: 744px) {
+     @media screen and (min-width: 844px) {
        .mobile-menu-open-icon {
          width: 32px;
          height: 32px;
        }
      }
   
-     @media screen and (min-width: 1440px) {
+     @media screen and (min-width: 1490px) {
        .btn-mobile-menu-open {
          display: none;
        }

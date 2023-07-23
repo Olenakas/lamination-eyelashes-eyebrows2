@@ -3,10 +3,14 @@ const refs = {
   closeModalBtn: document.querySelector('[data-action="close-modal"]'),
   backdrop: document.querySelector(".js-backdrop"),
   mobileCallBtn: document.getElementById("mobileCallBtn"),
+  priceEyelashesCallBtn: document.getElementById("priceEyelashesCallBtn"),
+  priceEyebrowsCallBtn: document.getElementById("priceEyebrowsCallBtn"),
 };
 
 refs.openModalBtn.addEventListener("click", onOpenModal);
 refs.mobileCallBtn.addEventListener("click", onOpenModal); 
+refs.priceEyelashesCallBtn.addEventListener("click", onOpenModal); 
+refs.priceEyebrowsCallBtn.addEventListener("click", onOpenModal); 
 refs.closeModalBtn.addEventListener("click", onCloseModal);
 refs.backdrop.addEventListener("click", onBackdropClick);
 
